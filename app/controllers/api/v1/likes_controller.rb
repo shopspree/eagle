@@ -1,4 +1,4 @@
-class LikesController < ApplicationController
+class Api::V1::LikesController < ApplicationController
 
   respond_to :json
   

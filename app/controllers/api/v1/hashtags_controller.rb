@@ -1,4 +1,4 @@
-class HashtagsController < ApplicationController
+class Api::V1::HashtagsController < ApplicationController
 
   respond_to :json
 
