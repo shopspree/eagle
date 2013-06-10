@@ -10,6 +10,6 @@ class Hashtag < ActiveRecord::Base
 
   scope :popular, lambda { |limit| order(:tags_count).reverse_order.limit(limit) }
 
-  scope :suggest, lambda { |prefix| where("key like ?", "#{:prefix}%").to_sql }
+  scope :suggest, lambda { |prefix| where("key like ?", "%#{prefix}%") }
 
 end

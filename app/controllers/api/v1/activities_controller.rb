@@ -1,4 +1,4 @@
-class Api::V1::ActivitiesController < ApplicationController
+class Api::V1::ActivitiesController < Api::V1::BaseController
 
   respond_to :json
 

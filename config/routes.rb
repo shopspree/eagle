@@ -22,6 +22,9 @@ Eagle::Application.routes.draw do
 
         # /posts/:post_id/likes
         resources :likes, only: [:index, :create, :update, :destroy]
+
+        # /posts/:post_id/mentions
+        resources :mentions, only: [:index, :create, :destroy]
       end
 
       # /comments
@@ -33,9 +36,10 @@ Eagle::Application.routes.draw do
       end
 
       # /hashtags
-      resources :hashtags, only: [:index, :show, :create]
       match '/hashtags/popular' => 'hashtags#popular' # /hashtags/popular
       match '/hashtags/suggest/:prefix' => 'hashtags#suggest' # /hashtags/suggest/:prefix
+      resources :hashtags, only: [:index, :show, :create]
+
 
       # /activities
       resources :activities, only: [:index, :show]

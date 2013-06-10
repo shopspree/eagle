@@ -1,6 +1,4 @@
-class Api::V1::CommentsController < ApplicationController
-
-  respond_to :json
+class Api::V1::CommentsController < Api::V1::BaseController
 
   # GET /api/v1/posts/1/comments.json
   def index

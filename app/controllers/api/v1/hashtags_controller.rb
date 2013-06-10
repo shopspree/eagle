@@ -1,6 +1,4 @@
-class Api::V1::HashtagsController < ApplicationController
-
-  respond_to :json
+class Api::V1::HashtagsController < Api::V1::BaseController
 
   # GET /api/v1/hashtags.json
   def index
@@ -29,7 +27,7 @@ class Api::V1::HashtagsController < ApplicationController
 
   # GET /api/v1/hashtags/popular.json
   def popular
-    @hashtags = Hashtag.popular
+    @hashtags = Hashtag.popular(10)
 
     respond_with @hashtags
   end

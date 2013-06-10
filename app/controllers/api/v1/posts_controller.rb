@@ -1,6 +1,4 @@
-class Api::V1::PostsController < ApplicationController
-
-  respond_to :json
+class Api::V1::PostsController < Api::V1::BaseController
 
   # GET /api/v1/posts/1.json
   def show
@@ -11,7 +9,7 @@ class Api::V1::PostsController < ApplicationController
 
   # POST /api/v1/posts.json
   def create
-    @post = @actor.posts.new(params[:post])
+    @post = Post.new(params[:post])
 
     if @post.save
       respond_with @post, status: :created, location: @post

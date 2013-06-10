@@ -1,7 +1,5 @@
-class Api::V1::LikesController < ApplicationController
+class Api::V1::LikesController < Api::V1::BaseController
 
-  respond_to :json
-  
   # GET /api/v1/posts/1/likes.json
   # GET /api/v1/comments/1/likes.json
   def index
