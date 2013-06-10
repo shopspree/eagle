@@ -1,4 +1,47 @@
 Eagle::Application.routes.draw do
+
+  # /api/*
+  namespace :api do
+
+    # /api/v1/*
+    namespace :v1 do
+
+      # /posts
+      resources :posts, only: [:show, :create, :update, :destroy] do
+
+        # /posts/popular
+        get 'popular', on: :collection
+
+        # /posts/posts_by_user_id/1
+        #get 'posts_by_user_id/:id', on: :collection
+
+        # /posts/:post_id/comments
+        resources :comments, only: [:index, :show, :create, :update, :destroy]
+
+        # /posts/:post_id/likes
+        resources :likes, only: [:index, :create, :update, :destroy]
+      end
+
+      # /comments
+      resources :comments, only: [] do
+
+        # /comments/:comment_id/likes
+        resources :likes, only: [:index, :create, :update, :destroy]
+
+      end
+
+      # /hashtags
+      resources :hashtags, only: [:index, :show, :create]
+      match '/hashtags/popular' => 'hashtags#popular' # /hashtags/popular
+      match '/hashtags/suggest/:prefix' => 'hashtags#suggest' # /hashtags/suggest/:prefix
+
+      # /activities
+      resources :activities, only: [:index, :show]
+
+    end
+  end
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

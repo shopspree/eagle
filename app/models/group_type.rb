@@ -1,5 +1,8 @@
 class GroupType < ActiveRecord::Base
+  has_many :groups
+
   attr_accessible :name
 
-  has_many :groups
+  validates :name, presence: true
+
 end

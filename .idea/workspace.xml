@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/eagle.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/asafam.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/object_hashtag.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20130606144610_create_object_hashtags.rb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/action.rb" afterPath="$PROJECT_DIR$/app/models/action.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/activity.rb" afterPath="$PROJECT_DIR$/app/models/activity.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/activity_activity_object.rb" afterPath="$PROJECT_DIR$/app/models/activity_activity_object.rb" />
@@ -29,37 +23,49 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/mention.rb" afterPath="$PROJECT_DIR$/app/models/mention.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/mention_actor.rb" afterPath="$PROJECT_DIR$/app/models/mention_actor.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/notification.rb" afterPath="$PROJECT_DIR$/app/models/notification.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/object_hashtag.rb" afterPath="$PROJECT_DIR$/app/models/object_hashtag.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/organization.rb" afterPath="$PROJECT_DIR$/app/models/organization.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/post.rb" afterPath="$PROJECT_DIR$/app/models/post.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/profile.rb" afterPath="$PROJECT_DIR$/app/models/profile.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="eagle.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370530646034" ignored="false" />
-    <file path="/organization.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370531218545" ignored="false" />
-    <file path="/actor.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370531394774" ignored="false" />
-    <file path="/profile.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370531569159" ignored="false" />
+    <file path="/Dummy.txt" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370609417267" ignored="false" />
+    <file path="/organization.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370534856065" ignored="false" />
+    <file path="/actor.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370547696009" ignored="false" />
+    <file path="/profile.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370534750036" ignored="false" />
     <file path="/address_type.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370531533717" ignored="false" />
     <file path="/address.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370531634029" ignored="false" />
-    <file path="/group.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370531731730" ignored="false" />
-    <file path="/group_type.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370531748572" ignored="false" />
+    <file path="/group.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370535084153" ignored="false" />
+    <file path="/group_type.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370535042172" ignored="false" />
     <file path="/group_actor.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370531772841" ignored="false" />
-    <file path="/activity.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370531915215" ignored="false" />
+    <file path="/activity.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370535430292" ignored="false" />
     <file path="/activity_activity_object.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370531978384" ignored="false" />
     <file path="/activity_object.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370532072216" ignored="false" />
     <file path="/activity_actor.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370532233344" ignored="false" />
-    <file path="/action.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370532251923" ignored="false" />
-    <file path="/post.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370532423048" ignored="false" />
+    <file path="/action.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370535340086" ignored="false" />
+    <file path="/post.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370789894595" ignored="false" />
     <file path="/media.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370532464361" ignored="false" />
     <file path="/media_type.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370532482724" ignored="false" />
-    <file path="/comment.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370533207944" ignored="false" />
+    <file path="/comment.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370858263254" ignored="false" />
     <file path="/like.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370533219201" ignored="false" />
-    <file path="/object_hashtag.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370533075272" ignored="false" />
-    <file path="/hashtag.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370532910842" ignored="false" />
-    <file path="/mention.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370533430605" ignored="false" />
+    <file path="/object_hashtag.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370789912547" ignored="false" />
+    <file path="/hashtag.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370860531145" ignored="false" />
+    <file path="/mention.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370791018957" ignored="false" />
     <file path="/mention_actor.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370533463832" ignored="false" />
     <file path="/notification.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370533498006" ignored="false" />
+    <file path="/posts_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370698636613" ignored="false" />
+    <file path="/routes.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370860938672" ignored="false" />
+    <file path="/comments_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370699401232" ignored="false" />
+    <file path="/likes_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370714390384" ignored="false" />
+    <file path="/hashtags_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370861076265" ignored="false" />
+    <file path="/20130610090515_add_tags_count_to_hashtag.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370855387736" ignored="false" />
+    <file path="/20130610091942_add_likes_count_to_post.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370856110289" ignored="false" />
+    <file path="/20130610092004_add_comments_count_to_post.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370856133140" ignored="false" />
+    <file path="/20130610092026_add_comments_count_to_comment.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370856198297" ignored="false" />
+    <file path="/20130610093254_fix_counter_cache_column_name.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370856878739" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,16 +88,16 @@
       <file leaf-file-name="post.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/post.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="38" selection-start="140" selection-end="287" vertical-scroll-proportion="0.0">
+            <state line="15" column="8" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="media_type.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/media_type.rb">
+      <file leaf-file-name="tag.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/tag.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="2" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0">
+            <state line="2" column="42" selection-start="94" selection-end="115" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -100,247 +106,7 @@
       <file leaf-file-name="comment.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="44" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RailsDependency/#eagle" pinned="false" current="false" current-in-tab="false">
-        <entry file="uml://RailsDependency/#eagle">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>RailsDependency</ID>
-              <OriginalElement>#eagle</OriginalElement>
-              <nodes>
-                <node x="424.0" y="1052.4083333333333">GroupType</node>
-                <node x="1335.5" y="508.5">Media</node>
-                <node x="878.0" y="495.25">MediaType</node>
-                <node x="1251.0" y="713.25">Comment</node>
-                <node x="0.0" y="794.96875">Organization</node>
-                <node x="478.0" y="1182.9083333333333">MentionActor</node>
-                <node x="816.0" y="46.25">Profile</node>
-                <node x="1753.5" y="689.7833333333333">Like</node>
-                <node x="881.5" y="861.7833333333333">Notification</node>
-                <node x="852.5" y="953.7833333333333">Group</node>
-                <node x="1737.0" y="401.8479166666666">ActivityObject</node>
-                <node x="0.0" y="1182.9083333333333">ObjectHashtag</node>
-                <node x="1780.0" y="975.4083333333333">Hashtag</node>
-                <node x="262.0" y="1182.9083333333333">ActivityActivityObject</node>
-                <node x="849.0" y="315.25">Activity</node>
-                <node x="412.5" y="271.346875">Action</node>
-                <node x="765.0" y="633.7833333333333">Post</node>
-                <node x="362.5" y="684.971875">Actor</node>
-                <node x="1739.0" y="861.4083333333333">Mention</node>
-                <node x="323.0" y="0.0">Address</node>
-                <node x="642.0" y="1182.9083333333333">ActivityActor</node>
-                <node x="25.5" y="66.0">AddressType</node>
-                <node x="803.0" y="1182.9083333333333">GroupActor</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="Organization" target="Hashtag">
-                  <point x="121.5" y="52.875" />
-                  <point x="323.0" y="1137.9083333333333" />
-                  <point x="1657.0" y="1137.9083333333333" />
-                  <point x="1737.0" y="1037.075" />
-                  <point x="-68.5" y="24.666666666666742" />
-                </edge>
-                <edge source="Activity" target="Actor">
-                  <point x="-109.0" y="17.5" />
-                  <point x="765.0" y="402.75" />
-                  <point x="685.0" y="719.659375" />
-                  <point x="141.5" y="-57.8125" />
-                </edge>
-                <edge source="MediaType" target="Media">
-                  <point x="80.0" y="-0.0" />
-                  <point x="-118.5" y="-24.25" />
-                </edge>
-                <edge source="Actor" target="Activity">
-                  <point x="141.5" y="-34.6875" />
-                  <point x="685.0" y="742.784375" />
-                  <point x="765.0" y="437.75" />
-                  <point x="-109.0" y="52.5" />
-                </edge>
-                <edge source="Address" target="Profile">
-                  <point x="181.0" y="-0.0" />
-                  <point x="-142.0" y="-57.25" />
-                </edge>
-                <edge source="Activity" target="ActivityObject">
-                  <point x="109.0" y="-35.0" />
-                  <point x="1151.0" y="350.25" />
-                  <point x="1231.0" y="373.78333333333325" />
-                  <point x="1657.0" y="373.78333333333325" />
-                  <point x="-111.5" y="-44.62499999999997" />
-                </edge>
-                <edge source="Comment" target="Like">
-                  <point x="203.0" y="-28.625" />
-                  <point x="1737.0" y="745.2833333333333" />
-                  <point x="-95.0" y="18.5" />
-                </edge>
-                <edge source="Post" target="Mention">
-                  <point x="193.0" y="51.75" />
-                  <point x="1231.0" y="977.1041666666666" />
-                  <point x="1657.0" y="977.1041666666666" />
-                  <point x="-109.5" y="18.5" />
-                </edge>
-                <edge source="Organization" target="Group">
-                  <point x="121.5" y="17.625" />
-                  <point x="323.0" y="1041.9083333333333" />
-                  <point x="-105.5" y="17.625" />
-                </edge>
-                <edge source="Organization" target="Activity">
-                  <point x="121.5" y="-52.875" />
-                  <point x="323.0" y="374.25" />
-                  <point x="685.0" y="374.25" />
-                  <point x="765.0" y="367.75" />
-                  <point x="-109.0" y="-17.5" />
-                </edge>
-                <edge source="GroupType" target="Group">
-                  <point x="80.0" y="-0.0" />
-                  <point x="685.0" y="1089.9083333333333" />
-                  <point x="765.0" y="1077.1583333333333" />
-                  <point x="-105.5" y="52.875" />
-                </edge>
-                <edge source="ActivityObject" target="Activity">
-                  <point x="-111.5" y="-14.874999999999972" />
-                  <point x="1657.0" y="384.78333333333325" />
-                  <point x="1231.0" y="384.78333333333325" />
-                  <point x="1151.0" y="420.25" />
-                  <point x="109.0" y="35.0" />
-                </edge>
-                <edge source="Post" target="Media">
-                  <point x="193.0" y="-86.25" />
-                  <point x="1231.0" y="581.25" />
-                  <point x="-118.5" y="24.25" />
-                </edge>
-                <edge source="Organization" target="Actor">
-                  <point x="121.5" y="-17.625" />
-                  <point x="323.0" y="777.471875" />
-                  <point x="-141.5" y="-0.0" />
-                </edge>
-                <edge source="Post" target="Like">
-                  <point x="193.0" y="-17.25" />
-                  <point x="1231.0" y="691.471875" />
-                  <point x="1657.0" y="691.471875" />
-                  <point x="1737.0" y="708.2833333333333" />
-                  <point x="-95.0" y="-18.5" />
-                </edge>
-                <edge source="Comment" target="Hashtag">
-                  <point x="203.0" y="85.875" />
-                  <point x="1737.0" y="987.7416666666666" />
-                  <point x="-68.5" y="-24.66666666666663" />
-                </edge>
-                <edge source="Action" target="Activity">
-                  <point x="91.5" y="-0.0" />
-                  <point x="685.0" y="308.846875" />
-                  <point x="765.0" y="332.75" />
-                  <point x="-109.0" y="-52.5" />
-                </edge>
-                <edge source="Post" target="Hashtag">
-                  <point x="193.0" y="86.25" />
-                  <point x="1231.0" y="1012.4083333333333" />
-                  <point x="-68.5" y="-0.0" />
-                </edge>
-                <edge source="Actor" target="Notification">
-                  <point x="141.5" y="34.6875" />
-                  <point x="685.0" y="812.159375" />
-                  <point x="765.0" y="887.7833333333333" />
-                  <point x="-76.5" y="-0.0" />
-                </edge>
-                <edge source="Actor" target="Group">
-                  <point x="141.5" y="80.9375" />
-                  <point x="685.0" y="858.409375" />
-                  <point x="765.0" y="1006.6583333333333" />
-                  <point x="-105.5" y="-17.625" />
-                </edge>
-                <edge source="Group" target="Actor">
-                  <point x="-105.5" y="-52.875" />
-                  <point x="765.0" y="971.4083333333333" />
-                  <point x="685.0" y="835.284375" />
-                  <point x="141.5" y="57.8125" />
-                </edge>
-                <edge source="Post" target="ActivityObject">
-                  <point x="193.0" y="-51.75" />
-                  <point x="1231.0" y="637.5" />
-                  <point x="1657.0" y="637.5" />
-                  <point x="-111.5" y="14.875" />
-                </edge>
-                <edge source="Actor" target="Comment">
-                  <point x="141.5" y="11.5625" />
-                  <point x="685.0" y="789.034375" />
-                  <point x="765.0" y="851.2833333333333" />
-                  <point x="1151.0" y="851.2833333333333" />
-                  <point x="1231.0" y="827.75" />
-                  <point x="-203.0" y="-0.0" />
-                </edge>
-                <edge source="Post" target="Comment">
-                  <point x="193.0" y="17.25" />
-                  <point x="-203.0" y="-76.33333333333326" />
-                </edge>
-                <edge source="Comment" target="Mention">
-                  <point x="203.0" y="28.625" />
-                  <point x="-109.5" y="-18.5" />
-                </edge>
-                <edge source="AddressType" target="Address">
-                  <point x="96.0" y="-0.0" />
-                  <point x="-181.0" y="-0.0" />
-                </edge>
-                <edge source="Actor" target="Profile">
-                  <point x="141.5" y="-80.9375" />
-                  <point x="685.0" y="696.534375" />
-                  <point x="765.0" y="218.0" />
-                  <point x="-142.0" y="57.25" />
-                </edge>
-                <edge source="Actor" target="Post">
-                  <point x="141.5" y="-11.5625" />
-                  <point x="685.0" y="765.909375" />
-                  <point x="-193.0" y="-0.0" />
-                </edge>
-                <edge source="Comment" target="Comment">
-                  <point x="-203.0" y="76.33333333333331" />
-                  <point x="1231.0" y="904.0833333333333" />
-                  <point x="1231.0" y="962.25" />
-                  <point x="1454.0" y="962.25" />
-                  <point x="0.0" y="114.5" />
-                </edge>
-                <edge source="Comment" target="ActivityObject">
-                  <point x="203.0" y="-85.875" />
-                  <point x="-111.5" y="44.625" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.537559745052485" x="866.8105684020052" y="490.6592700828171" />
-              <SelectedNodes />
-              <Categories>
-                <Category>Association fields</Category>
-                <Category>Migration fields</Category>
-              </Categories>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="like.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/like.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="41" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="object_hashtag.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/object_hashtag.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="44" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hashtag.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/hashtag.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="27" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
+            <state line="10" column="94" selection-start="377" selection-end="408" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -349,25 +115,34 @@
       <file leaf-file-name="mention.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/mention.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="2" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mention_actor.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/mention_actor.rb">
+      <file leaf-file-name="hashtag.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/hashtag.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="2" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
+            <state line="12" column="34" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="notification.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/notification.rb">
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="2" selection-start="136" selection-end="136" vertical-scroll-proportion="0.11432927">
+            <state line="33" column="57" selection-start="824" selection-end="824" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hashtags_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/hashtags_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="13" selection-start="733" selection-end="733" vertical-scroll-proportion="0.81497794">
               <folding />
             </state>
           </provider>
@@ -380,6 +155,10 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="GeneratorOptions">
+    <option name="VCS_SHOW_CONFIRMATION" value="true" />
+    <option name="ENVIRONMENT" value="development" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -391,22 +170,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/group_actor.rb" />
-        <option value="$PROJECT_DIR$/app/models/activity.rb" />
-        <option value="$PROJECT_DIR$/app/models/activity_activity_object.rb" />
-        <option value="$PROJECT_DIR$/app/models/activity_object.rb" />
-        <option value="$PROJECT_DIR$/app/models/activity_actor.rb" />
-        <option value="$PROJECT_DIR$/app/models/action.rb" />
-        <option value="$PROJECT_DIR$/app/models/post.rb" />
-        <option value="$PROJECT_DIR$/app/models/media.rb" />
-        <option value="$PROJECT_DIR$/app/models/media_type.rb" />
-        <option value="$PROJECT_DIR$/app/models/hashtag.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/object_hashtag.rb" />
-        <option value="$PROJECT_DIR$/app/models/comment.rb" />
-        <option value="$PROJECT_DIR$/app/models/like.rb" />
         <option value="$PROJECT_DIR$/app/models/mention.rb" />
-        <option value="$PROJECT_DIR$/app/models/mention_actor.rb" />
-        <option value="$PROJECT_DIR$/app/models/notification.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130610090515_add_tags_count_to_hashtag.rb" />
+        <option value="$PROJECT_DIR$/app/models/tag.rb" />
+        <option value="$PROJECT_DIR$/app/models/like.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130610092026_add_comments_count_to_comment.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130610092038_add_likes_count_to_comment.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130610092004_add_comments_count_to_post.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130610091942_add_likes_count_to_post.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130610093254_fix_counter_cache_column_name.rb" />
+        <option value="$PROJECT_DIR$/app/models/comment.rb" />
+        <option value="$PROJECT_DIR$/app/models/post.rb" />
+        <option value="$PROJECT_DIR$/app/models/hashtag.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/api/v1/hashtags_controller.rb" />
       </list>
     </option>
   </component>
@@ -441,8 +220,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="RailsProjectView" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -471,7 +248,81 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -493,18 +344,79 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="reference.settings.ide.settings.web.browsers" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="recentsLimit" value="5" />
+    <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RunManager" selected="Rails.Development: eagle">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -557,6 +469,36 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
       <method />
     </configuration>
+    <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method />
+    </configuration>
     <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby">
       <module name="" />
       <RUBY_RUN_CONFIG NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
@@ -575,6 +517,32 @@
       <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_PATH" VALUE="" />
       <RUBY_RUN_CONFIG NAME="SCRIPT_ARGS" VALUE="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest">
+      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+      <module name="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <EXTENSION ID="org.jetbrains.plugins.ruby.motion.run.MotionSimulatorRunExtension" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
       <method />
     </configuration>
     <configuration default="true" type="com.intellij.persistence.run.ConsoleRunConfigurationType" factoryName="Query Language Console">
@@ -705,23 +673,23 @@
     <frame x="0" y="22" width="1440" height="804" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25322813" sideWeight="0.67043847" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.329235" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -785,318 +753,114 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/activity.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="65" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/actor.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="19" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/group_actor.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="2" selection-start="118" selection-end="118" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/activity_actor.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="2" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/action.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="2" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/media.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="2" selection-start="134" selection-end="134" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/media_type.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="2" selection-start="81" selection-end="81" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/post.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="38" selection-start="140" selection-end="287" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://RailsDependency/#eagle">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>RailsDependency</ID>
-          <OriginalElement>#eagle</OriginalElement>
-          <nodes>
-            <node x="424.0" y="1052.4083333333333">GroupType</node>
-            <node x="1335.5" y="508.5">Media</node>
-            <node x="878.0" y="495.25">MediaType</node>
-            <node x="1251.0" y="713.25">Comment</node>
-            <node x="0.0" y="794.96875">Organization</node>
-            <node x="478.0" y="1182.9083333333333">MentionActor</node>
-            <node x="816.0" y="46.25">Profile</node>
-            <node x="1753.5" y="689.7833333333333">Like</node>
-            <node x="881.5" y="861.7833333333333">Notification</node>
-            <node x="852.5" y="953.7833333333333">Group</node>
-            <node x="1737.0" y="401.8479166666666">ActivityObject</node>
-            <node x="0.0" y="1182.9083333333333">ObjectHashtag</node>
-            <node x="1780.0" y="975.4083333333333">Hashtag</node>
-            <node x="262.0" y="1182.9083333333333">ActivityActivityObject</node>
-            <node x="849.0" y="315.25">Activity</node>
-            <node x="412.5" y="271.346875">Action</node>
-            <node x="765.0" y="633.7833333333333">Post</node>
-            <node x="362.5" y="684.971875">Actor</node>
-            <node x="1739.0" y="861.4083333333333">Mention</node>
-            <node x="323.0" y="0.0">Address</node>
-            <node x="642.0" y="1182.9083333333333">ActivityActor</node>
-            <node x="25.5" y="66.0">AddressType</node>
-            <node x="803.0" y="1182.9083333333333">GroupActor</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="Organization" target="Hashtag">
-              <point x="121.5" y="52.875" />
-              <point x="323.0" y="1137.9083333333333" />
-              <point x="1657.0" y="1137.9083333333333" />
-              <point x="1737.0" y="1037.075" />
-              <point x="-68.5" y="24.666666666666742" />
-            </edge>
-            <edge source="Activity" target="Actor">
-              <point x="-109.0" y="17.5" />
-              <point x="765.0" y="402.75" />
-              <point x="685.0" y="719.659375" />
-              <point x="141.5" y="-57.8125" />
-            </edge>
-            <edge source="MediaType" target="Media">
-              <point x="80.0" y="-0.0" />
-              <point x="-118.5" y="-24.25" />
-            </edge>
-            <edge source="Actor" target="Activity">
-              <point x="141.5" y="-34.6875" />
-              <point x="685.0" y="742.784375" />
-              <point x="765.0" y="437.75" />
-              <point x="-109.0" y="52.5" />
-            </edge>
-            <edge source="Address" target="Profile">
-              <point x="181.0" y="-0.0" />
-              <point x="-142.0" y="-57.25" />
-            </edge>
-            <edge source="Activity" target="ActivityObject">
-              <point x="109.0" y="-35.0" />
-              <point x="1151.0" y="350.25" />
-              <point x="1231.0" y="373.78333333333325" />
-              <point x="1657.0" y="373.78333333333325" />
-              <point x="-111.5" y="-44.62499999999997" />
-            </edge>
-            <edge source="Comment" target="Like">
-              <point x="203.0" y="-28.625" />
-              <point x="1737.0" y="745.2833333333333" />
-              <point x="-95.0" y="18.5" />
-            </edge>
-            <edge source="Post" target="Mention">
-              <point x="193.0" y="51.75" />
-              <point x="1231.0" y="977.1041666666666" />
-              <point x="1657.0" y="977.1041666666666" />
-              <point x="-109.5" y="18.5" />
-            </edge>
-            <edge source="Organization" target="Group">
-              <point x="121.5" y="17.625" />
-              <point x="323.0" y="1041.9083333333333" />
-              <point x="-105.5" y="17.625" />
-            </edge>
-            <edge source="Organization" target="Activity">
-              <point x="121.5" y="-52.875" />
-              <point x="323.0" y="374.25" />
-              <point x="685.0" y="374.25" />
-              <point x="765.0" y="367.75" />
-              <point x="-109.0" y="-17.5" />
-            </edge>
-            <edge source="GroupType" target="Group">
-              <point x="80.0" y="-0.0" />
-              <point x="685.0" y="1089.9083333333333" />
-              <point x="765.0" y="1077.1583333333333" />
-              <point x="-105.5" y="52.875" />
-            </edge>
-            <edge source="ActivityObject" target="Activity">
-              <point x="-111.5" y="-14.874999999999972" />
-              <point x="1657.0" y="384.78333333333325" />
-              <point x="1231.0" y="384.78333333333325" />
-              <point x="1151.0" y="420.25" />
-              <point x="109.0" y="35.0" />
-            </edge>
-            <edge source="Post" target="Media">
-              <point x="193.0" y="-86.25" />
-              <point x="1231.0" y="581.25" />
-              <point x="-118.5" y="24.25" />
-            </edge>
-            <edge source="Organization" target="Actor">
-              <point x="121.5" y="-17.625" />
-              <point x="323.0" y="777.471875" />
-              <point x="-141.5" y="-0.0" />
-            </edge>
-            <edge source="Post" target="Like">
-              <point x="193.0" y="-17.25" />
-              <point x="1231.0" y="691.471875" />
-              <point x="1657.0" y="691.471875" />
-              <point x="1737.0" y="708.2833333333333" />
-              <point x="-95.0" y="-18.5" />
-            </edge>
-            <edge source="Comment" target="Hashtag">
-              <point x="203.0" y="85.875" />
-              <point x="1737.0" y="987.7416666666666" />
-              <point x="-68.5" y="-24.66666666666663" />
-            </edge>
-            <edge source="Action" target="Activity">
-              <point x="91.5" y="-0.0" />
-              <point x="685.0" y="308.846875" />
-              <point x="765.0" y="332.75" />
-              <point x="-109.0" y="-52.5" />
-            </edge>
-            <edge source="Post" target="Hashtag">
-              <point x="193.0" y="86.25" />
-              <point x="1231.0" y="1012.4083333333333" />
-              <point x="-68.5" y="-0.0" />
-            </edge>
-            <edge source="Actor" target="Notification">
-              <point x="141.5" y="34.6875" />
-              <point x="685.0" y="812.159375" />
-              <point x="765.0" y="887.7833333333333" />
-              <point x="-76.5" y="-0.0" />
-            </edge>
-            <edge source="Actor" target="Group">
-              <point x="141.5" y="80.9375" />
-              <point x="685.0" y="858.409375" />
-              <point x="765.0" y="1006.6583333333333" />
-              <point x="-105.5" y="-17.625" />
-            </edge>
-            <edge source="Group" target="Actor">
-              <point x="-105.5" y="-52.875" />
-              <point x="765.0" y="971.4083333333333" />
-              <point x="685.0" y="835.284375" />
-              <point x="141.5" y="57.8125" />
-            </edge>
-            <edge source="Post" target="ActivityObject">
-              <point x="193.0" y="-51.75" />
-              <point x="1231.0" y="637.5" />
-              <point x="1657.0" y="637.5" />
-              <point x="-111.5" y="14.875" />
-            </edge>
-            <edge source="Actor" target="Comment">
-              <point x="141.5" y="11.5625" />
-              <point x="685.0" y="789.034375" />
-              <point x="765.0" y="851.2833333333333" />
-              <point x="1151.0" y="851.2833333333333" />
-              <point x="1231.0" y="827.75" />
-              <point x="-203.0" y="-0.0" />
-            </edge>
-            <edge source="Post" target="Comment">
-              <point x="193.0" y="17.25" />
-              <point x="-203.0" y="-76.33333333333326" />
-            </edge>
-            <edge source="Comment" target="Mention">
-              <point x="203.0" y="28.625" />
-              <point x="-109.5" y="-18.5" />
-            </edge>
-            <edge source="AddressType" target="Address">
-              <point x="96.0" y="-0.0" />
-              <point x="-181.0" y="-0.0" />
-            </edge>
-            <edge source="Actor" target="Profile">
-              <point x="141.5" y="-80.9375" />
-              <point x="685.0" y="696.534375" />
-              <point x="765.0" y="218.0" />
-              <point x="-142.0" y="57.25" />
-            </edge>
-            <edge source="Actor" target="Post">
-              <point x="141.5" y="-11.5625" />
-              <point x="685.0" y="765.909375" />
-              <point x="-193.0" y="-0.0" />
-            </edge>
-            <edge source="Comment" target="Comment">
-              <point x="-203.0" y="76.33333333333331" />
-              <point x="1231.0" y="904.0833333333333" />
-              <point x="1231.0" y="962.25" />
-              <point x="1454.0" y="962.25" />
-              <point x="0.0" y="114.5" />
-            </edge>
-            <edge source="Comment" target="ActivityObject">
-              <point x="203.0" y="-85.875" />
-              <point x="-111.5" y="44.625" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.537559745052485" x="866.8105684020052" y="490.6592700828171" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Association fields</Category>
-            <Category>Migration fields</Category>
-          </Categories>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="44" selection-start="373" selection-end="373" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/like.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="41" selection-start="199" selection-end="199" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/object_hashtag.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="44" selection-start="152" selection-end="152" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/hashtag.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="27" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/mention.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="2" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/mention_actor.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/profile.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="2" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/notification.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130610092026_add_comments_count_to_comment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="2" selection-start="136" selection-end="136" vertical-scroll-proportion="0.11432927">
+        <state line="6" column="58" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130610092004_add_comments_count_to_post.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="52" selection-start="246" selection-end="246" vertical-scroll-proportion="0.13677812">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130610092038_add_likes_count_to_comment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="55" selection-start="258" selection-end="258" vertical-scroll-proportion="0.13215859">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130610090515_add_tags_count_to_hashtag.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="74" selection-start="116" selection-end="275" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130610093254_fix_counter_cache_column_name.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="63" selection-start="672" selection-end="672" vertical-scroll-proportion="0.31914893">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130610091942_add_likes_count_to_post.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="49" selection-start="237" selection-end="237" vertical-scroll-proportion="0.13215859">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/like.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="62" selection-start="161" selection-end="161" vertical-scroll-proportion="0.08810572">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/tag.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="42" selection-start="94" selection-end="115" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="94" selection-start="377" selection-end="408" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/post.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="8" selection-start="438" selection-end="438" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/hashtag.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="34" selection-start="327" selection-end="327" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="57" selection-start="824" selection-end="824" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/hashtags_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="13" selection-start="733" selection-end="733" vertical-scroll-proportion="0.81497794">
           <folding />
         </state>
       </provider>

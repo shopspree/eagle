@@ -1,6 +1,8 @@
 class Action < ActiveRecord::Base
+  has_many :activities
+
   attr_accessible :name
 
-  has_many :activities
+  validates :name, presence: true
 
 end

@@ -1,6 +1,4 @@
 class Actor < ActiveRecord::Base
-  attr_accessible :user_id
-
   has_many :posts
   has_many :comments
   has_many :notifications
@@ -9,5 +7,9 @@ class Actor < ActiveRecord::Base
   has_one :profile
 
   belongs to :user
+
+  attr_accessible :user_id
+
+  #validates :user_id, presence: true
 
 end

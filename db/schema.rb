@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130606145015) do
+ActiveRecord::Schema.define(:version => 20130610093254) do
 
   create_table "actions", :force => true do |t|
     t.string   "name"
@@ -77,8 +77,10 @@ ActiveRecord::Schema.define(:version => 20130606145015) do
     t.integer  "actor_id"
     t.integer  "commentable_id"
     t.string   "commentable_type"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
+    t.datetime "created_at",                      :null => false
+    t.datetime "updated_at",                      :null => false
+    t.integer  "comments_count",   :default => 0
+    t.integer  "likes_count",      :default => 0
   end
 
   create_table "group_actors", :force => true do |t|
@@ -107,8 +109,9 @@ ActiveRecord::Schema.define(:version => 20130606145015) do
     t.string   "value"
     t.integer  "actor_id"
     t.integer  "organization_id"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.datetime "created_at",                     :null => false
+    t.datetime "updated_at",                     :null => false
+    t.integer  "tags_count",      :default => 0
   end
 
   create_table "likes", :force => true do |t|
@@ -173,8 +176,10 @@ ActiveRecord::Schema.define(:version => 20130606145015) do
   create_table "posts", :force => true do |t|
     t.string   "content"
     t.integer  "actor_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
+    t.integer  "likes_count",    :default => 0
+    t.integer  "comments_count", :default => 0
   end
 
   create_table "profiles", :force => true do |t|
@@ -190,6 +195,14 @@ ActiveRecord::Schema.define(:version => 20130606145015) do
     t.integer  "organization_id"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
+  end
+
+  create_table "tags", :force => true do |t|
+    t.integer  "taggable_id"
+    t.string   "taggable_type"
+    t.integer  "hashtag_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
   end
 
 end
