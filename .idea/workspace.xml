@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20130606144610_create_object_hashtags.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20130610125818_devise_create_users.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/base_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/base_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/devise.rb" afterPath="$PROJECT_DIR$/config/initializers/devise.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130611100203_add_devise_to_users.rb" afterPath="$PROJECT_DIR$/db/migrate/20130611100203_add_devise_to_users.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="eagle.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,6 +52,7 @@
     <file path="/tokens_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370880488977" ignored="false" />
     <file path="/20130610154756_add_authentication_token_to_user.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370879315567" ignored="false" />
     <file path="/application_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370941748808" ignored="false" />
+    <file path="/20130611100203_add_devise_to_users.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370945926417" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +102,7 @@
       <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="18" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0">
+            <state line="5" column="22" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -116,7 +111,7 @@
       <file leaf-file-name="20130611100203_add_devise_to_users.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/migrate/20130611100203_add_devise_to_users.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="4" selection-start="1359" selection-end="1359" vertical-scroll-proportion="1.5949367">
+            <state line="50" column="21" selection-start="1788" selection-end="1788" vertical-scroll-proportion="0.75949365">
               <folding />
             </state>
           </provider>
@@ -822,14 +817,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="18" selection-start="108" selection-end="108" vertical-scroll-proportion="0.0">
+        <state line="5" column="22" selection-start="227" selection-end="227" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130611100203_add_devise_to_users.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="4" selection-start="1359" selection-end="1359" vertical-scroll-proportion="1.5949367">
+        <state line="50" column="21" selection-start="1788" selection-end="1788" vertical-scroll-proportion="0.75949365">
           <folding />
         </state>
       </provider>
