@@ -7,6 +7,8 @@ Eagle::Application.routes.draw do
 
     # /api/v1/*
     namespace :v1 do
+      # /tokens
+      resources :tokens, :only => [:create, :destroy]
 
       # /posts
       resources :posts, only: [:show, :create, :update, :destroy] do
@@ -47,7 +49,7 @@ Eagle::Application.routes.draw do
     end
   end
 
-  root to: "posts#index"
+  #root to: "posts#index"
 
 
   # The priority is based upon order of creation:
