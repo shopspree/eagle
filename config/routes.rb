@@ -1,6 +1,7 @@
 Eagle::Application.routes.draw do
 
-  devise_for :users
+  # devise
+  devise_for :users, controllers: { sessions: "api/v1/sessions", registrations: "api/v1/registrations" }
 
   # /api/*
   namespace :api do
@@ -8,7 +9,10 @@ Eagle::Application.routes.draw do
     # /api/v1/*
     namespace :v1 do
       # /tokens
-      resources :tokens, :only => [:create, :destroy]
+      resources :tokens, only: [:create, :destroy]
+
+      devise_for :users
+      #resources :registrations, only: [:create]
 
       # /posts
       resources :posts, only: [:show, :create, :update, :destroy] do
@@ -108,4 +112,14 @@ Eagle::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id))(.:format)'
+
+
+  #devise_scope :users do
+  #  namespace :api do
+  #    namespace :v1 do
+  #      resources :sessions, :only => [:create, :destroy]
+  #      resources :registrations, :only => [:create]
+  #    end
+  #  end
+  #end
 end

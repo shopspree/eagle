@@ -1,5 +1,5 @@
 class Organization < ActiveRecord::Base
-  has_many :actors
+  has_many :profiles
   has_many :groups
   has_many :activities
   has_many :hashtags

@@ -1,0 +1,9 @@
+# config/companies.yml
+
+whitelist:
+  - ebay.com
+  - googlemail.com
+blacklist:
+  - yahoo.com
+  - google.com
+  - hotmail.com
