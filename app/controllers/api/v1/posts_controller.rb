@@ -1,5 +1,7 @@
 class Api::V1::PostsController < Api::V1::BaseController
 
+  after_filter :audit
+
   # GET /api/v1/posts/1.json
   def show
     @post = Post.find(params[:id])
@@ -9,7 +11,7 @@ class Api::V1::PostsController < Api::V1::BaseController
 
   # POST /api/v1/posts.json
   def create
-    @post = Post.new(params[:post])
+    @post = current_actor.posts.new(params[:post])
 
     if @post.save
       respond_with @post, status: :created, location: @post
@@ -52,5 +54,11 @@ class Api::V1::PostsController < Api::V1::BaseController
 
     responds_with @posts
 
+  end
+
+  protected
+
+  def post_activity
+    Activity.create
   end
 end

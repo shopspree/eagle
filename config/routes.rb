@@ -8,11 +8,11 @@ Eagle::Application.routes.draw do
 
     # /api/v1/*
     namespace :v1 do
-      # /tokens
-      resources :tokens, only: [:create, :destroy]
 
-      devise_for :users
-      #resources :registrations, only: [:create]
+      # /users/:username/profiles
+      resources :users, only: []  do
+        resources :prfoiles, only: [:show, :update]
+      end
 
       # /posts
       resources :posts, only: [:show, :create, :update, :destroy] do

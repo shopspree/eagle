@@ -1,4 +1,5 @@
 class Post < ActiveRecord::Base
+
   has_many :medias
   has_many :activity_objects, as: :timelineable
   has_many :likes, as: :likeable

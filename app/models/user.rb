@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
 
-  #has_one :actor
+  has_one :actor
 
   # Include default devise modules. Others available are:
   # :lockable, :timeoutable and :omniauthable
@@ -19,15 +19,16 @@ class User < ActiveRecord::Base
 
   before_save :ensure_authentication_token
 
-  validate :email_validation
+  validate :email_validations
 
 
   protected
-  def email_validation
+
+  def email_validations
     domain = email.split("@").last
 
-    errors.add :email, "#{domain} is blacklisted}" if Companies["blacklist"].include? domain
-    errors.add :email, "#{domain} is not whitelisted}" unless Companies["whitelist"].include? domain
+    errors.add :email, "#{domain} is blacklisted" if Companies["blacklist"].include? domain
+    errors.add :email, "#{domain} is not whitelisted" unless Companies["whitelist"].include? domain
   end
 
 end

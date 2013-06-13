@@ -4,18 +4,21 @@ class Api::V1::SessionsController < Devise::SessionsController
 
   before_filter :ensure_params_exist
 
+  after_filter :create_actor, only: [:create]
+
   def create
     build_resource
-    resource = User.find_for_database_authentication(email: params[:user_login][:email])
-    return invalid_login_attempt unless resource
+    @user = User.find_for_database_authentication(email: params[:user_login][:email])
+    return invalid_login_attempt unless @user
 
-    if resource.nil?
+    if @user.nil?
       render json: {success: false, message: "Error with your login or password"}, status: 401
     end
 
-    if resource.valid_password?(params[:user_login][:password])
-      sign_in(:user, resource)
-      render json: {success: true, auth_token: resource.authentication_token, email: resource.email}, status: :ok
+    if @user.valid_password?(params[:user_login][:password])
+      sign_in(:user, @user)
+
+      render json: {success: true, auth_token: @user.authentication_token, email: @user.email}, status: :ok
     else
       render json: {success: false, message: "Error with your login or password"}, status: 401
     end
@@ -42,6 +45,11 @@ class Api::V1::SessionsController < Devise::SessionsController
 
   def verified_request?
     request.content_type == "application/json" || super
+  end
+
+  def create_actor
+    #user = User.find_all_by_email(params[:user_login][:email])
+    @user.actor.find_or_create_by_actor_id(user.id) if user
   end
 
 end
