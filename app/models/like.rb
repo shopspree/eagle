@@ -1,5 +1,5 @@
 class Like < ActiveRecord::Base
-  has_one :activity_object, as: :timelineable
+  has_one :activity_object, as: :timelineable, dependent: :destroy
 
   belongs_to :actor
   belongs_to :likeable, polymorphic: true, counter_cache: true

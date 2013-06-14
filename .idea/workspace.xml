@@ -2,50 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/activity_inspector_observer.rb" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/activity_activity_object.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/inspector_observer.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20130606141702_create_activity_activity_objects.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20130606144610_create_object_hashtags.rb" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20130612151944_add_user_id_to_actor.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20130612152122_add_user_id_to_actor.rb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/activity.rb" afterPath="$PROJECT_DIR$/app/models/activity.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/activity_object.rb" afterPath="$PROJECT_DIR$/app/models/activity_object.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/actor.rb" afterPath="$PROJECT_DIR$/app/models/actor.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/actor_observer.rb" afterPath="$PROJECT_DIR$/app/models/actor_observer.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/base_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/base_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/comment.rb" afterPath="$PROJECT_DIR$/app/models/comment.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/comments_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/comments_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/companies.yml" afterPath="$PROJECT_DIR$/config/companies.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/like.rb" afterPath="$PROJECT_DIR$/app/models/like.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/organization.rb" afterPath="$PROJECT_DIR$/app/models/organization.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/post.rb" afterPath="$PROJECT_DIR$/app/models/post.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/profiles_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/profiles_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/profile.rb" afterPath="$PROJECT_DIR$/app/models/profile.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/sessions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/sessions_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user_observer.rb" afterPath="$PROJECT_DIR$/app/models/user_observer.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="eagle.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370957868430" ignored="false" />
-    <file path="/organization.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370962161840" ignored="false" />
-    <file path="/actor.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371114922324" ignored="false" />
-    <file path="/profile.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370534750036" ignored="false" />
+    <file path="/organization.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371225243924" ignored="false" />
+    <file path="/actor.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371225222701" ignored="false" />
+    <file path="/profile.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371202067913" ignored="false" />
     <file path="/address_type.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370531533717" ignored="false" />
     <file path="/address.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370531634029" ignored="false" />
     <file path="/group.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370535084153" ignored="false" />
     <file path="/group_type.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370535042172" ignored="false" />
     <file path="/group_actor.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370531772841" ignored="false" />
-    <file path="/activity.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371117003647" ignored="false" />
-    <file path="/activity_activity_object.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370531978384" ignored="false" />
-    <file path="/activity_object.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370532072216" ignored="false" />
+    <file path="/activity.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371216440759" ignored="false" />
+    <file path="/activity_activity_object.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371208421322" ignored="false" />
+    <file path="/activity_object.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371216342960" ignored="false" />
     <file path="/activity_actor.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370532233344" ignored="false" />
     <file path="/action.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370535340086" ignored="false" />
-    <file path="/post.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371112415824" ignored="false" />
+    <file path="/post.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371226036690" ignored="false" />
     <file path="/media.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370532464361" ignored="false" />
     <file path="/media_type.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370532482724" ignored="false" />
-    <file path="/comment.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370858263254" ignored="false" />
+    <file path="/comment.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371120816269" ignored="false" />
     <file path="/like.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370533219201" ignored="false" />
     <file path="/object_hashtag.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370789912547" ignored="false" />
     <file path="/hashtag.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370860531145" ignored="false" />
     <file path="/mention.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370791018957" ignored="false" />
     <file path="/mention_actor.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370533463832" ignored="false" />
     <file path="/notification.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370533498006" ignored="false" />
-    <file path="/posts_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371116433476" ignored="false" />
+    <file path="/posts_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371208083326" ignored="false" />
     <file path="/routes.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371107975350" ignored="false" />
-    <file path="/comments_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370699401232" ignored="false" />
-    <file path="/likes_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370714390384" ignored="false" />
+    <file path="/comments_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371225472011" ignored="false" />
+    <file path="/likes_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371225887754" ignored="false" />
     <file path="/hashtags_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370861076265" ignored="false" />
     <file path="/20130610090515_add_tags_count_to_hashtag.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370855387736" ignored="false" />
     <file path="/20130610091942_add_likes_count_to_post.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370856110289" ignored="false" />
@@ -55,10 +69,10 @@
     <file path="/Gemfile" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370861732403" ignored="false" />
     <file path="/development.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370861855826" ignored="false" />
     <file path="/production.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370861887571" ignored="false" />
-    <file path="/application.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371115559087" ignored="false" />
+    <file path="/application.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371119323684" ignored="false" />
     <file path="/activities_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370870898356" ignored="false" />
     <file path="/mentions_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370875896614" ignored="false" />
-    <file path="/base_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371066507436" ignored="false" />
+    <file path="/base_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371225573791" ignored="false" />
     <file path="/tokens_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370880488977" ignored="false" />
     <file path="/20130610154756_add_authentication_token_to_user.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370879315567" ignored="false" />
     <file path="/application_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370978915440" ignored="false" />
@@ -68,26 +82,31 @@
     <file path="/regsitrations_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370956636797" ignored="false" />
     <file path="/registrations_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371049803699" ignored="false" />
     <file path="/20130611145015_add_domain_to_organization.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370962247000" ignored="false" />
-    <file path="/user.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371115147615" ignored="false" />
+    <file path="/user.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371207019607" ignored="false" />
     <file path="$PROJECT_DIR$/../temp1/app/controllers/application_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370980798547" ignored="false" />
     <file path="$PROJECT_DIR$/../temp1/app/controllers/sessions_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371034149567" ignored="false" />
     <file path="$PROJECT_DIR$/../temp1/db/migrate/20130611165936_devise_create_users.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370976618886" ignored="false" />
     <file path="$PROJECT_DIR$/../temp1/config/routes.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371030231191" ignored="false" />
-    <file path="$PROJECT_DIR$/../temp1/db/schema.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370978370231" ignored="false" />
+    <file path="$PROJECT_DIR$/../temp1/db/schema.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371216326731" ignored="false" />
     <file path="$PROJECT_DIR$/../temp1/app/models/user.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371025808540" ignored="false" />
     <file path="$PROJECT_DIR$/../temp1/app/controllers/tests_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370980700816" ignored="false" />
-    <file path="/sessions_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371058409364" ignored="false" />
-    <file path="/fragment.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371045499622" ignored="false" />
+    <file path="/sessions_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371207142738" ignored="false" />
+    <file path="/fragment.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371226587234" ignored="false" />
     <file path="$PROJECT_DIR$/../temp1/app/controllers/registrations_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371034751269" ignored="false" />
     <file path="/companies.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371044116360" ignored="false" />
-    <file path="/companies.yml" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371037404529" ignored="false" />
+    <file path="/companies.yml" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371129307119" ignored="false" />
     <file path="/email_validator.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371047434924" ignored="false" />
     <file path="/temp.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371049558476" ignored="false" />
     <file path="/profiles_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371108513421" ignored="false" />
     <file path="/base_model.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371110883573" ignored="false" />
-    <file path="/actor_observer.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371114860816" ignored="false" />
-    <file path="/user_observer.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371114835830" ignored="false" />
+    <file path="/actor_observer.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371202100133" ignored="false" />
+    <file path="/user_observer.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371142703904" ignored="false" />
     <file path="/verifier_observer.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371115495747" ignored="false" />
+    <file path="/inspector_observer.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371119880568" ignored="false" />
+    <file path="/20130613155451_remove_activity_object_id_from_activity.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371139027211" ignored="false" />
+    <file path="/20130613155810_remove_activity_object_id_from_activity.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371139143850" ignored="false" />
+    <file path="/20130613155932_remove_activity_object_id_from_activities.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371139186048" ignored="false" />
+    <file path="/activity_inspector_observer.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371216658723" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,62 +126,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="profile.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/profile.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="27" selection-start="124" selection-end="132" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user_observer.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/user_observer.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="4" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="actor_observer.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/actor_observer.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="19" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inspector_observer.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/inspector_observer.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="37" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/application.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="89" selection-start="1455" selection-end="1455" vertical-scroll-proportion="-4.9615383">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="posts_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="19" selection-start="1157" selection-end="1157" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activities_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/activities_controller.rb">
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -170,19 +135,73 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/models/activity.rb">
+      <file leaf-file-name="profile.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/profile.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="26" selection-start="108" selection-end="108" vertical-scroll-proportion="0.046153847">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="schema.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <file leaf-file-name="likes_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="4" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.0">
+            <state line="34" column="38" selection-start="985" selection-end="1001" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/base_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="3" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comments_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/comments_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="0" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_inspector_observer.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/activity_inspector_observer.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="0" selection-start="802" selection-end="802" vertical-scroll-proportion="0.43243244">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="metal.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_controller/metal.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="143" column="0" selection-start="4448" selection-end="4448" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="comment.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="27" selection-start="436" selection-end="444" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="post.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/post.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="20" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -210,22 +229,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/api/v1/registrations_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/api/v1/sessions_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/api/v1/base_controller.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/api/v1/profiles_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/app/models/actor.rb" />
-        <option value="$PROJECT_DIR$/app/models/user_observer.rb" />
         <option value="$PROJECT_DIR$/app/models/actor_observer.rb" />
-        <option value="$PROJECT_DIR$/app/models/post.rb" />
-        <option value="$PROJECT_DIR$/app/models/base_model.rb" />
-        <option value="$PROJECT_DIR$/app/models/verifier_observer.rb" />
-        <option value="$PROJECT_DIR$/app/models/inspector_observer.rb" />
-        <option value="$PROJECT_DIR$/config/application.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/api/v1/sessions_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/activity_activity_object.rb" />
+        <option value="$PROJECT_DIR$/app/models/activity_object.rb" />
         <option value="$PROJECT_DIR$/app/models/activity.rb" />
+        <option value="$PROJECT_DIR$/app/models/activity_inspector_observer.rb" />
+        <option value="$PROJECT_DIR$/app/models/like.rb" />
+        <option value="$PROJECT_DIR$/app/models/comment.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/actor.rb" />
+        <option value="$PROJECT_DIR$/app/models/organization.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/api/v1/base_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/post.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/api/v1/comments_controller.rb" />
       </list>
     </option>
   </component>
@@ -318,6 +337,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -683,6 +716,23 @@
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" name="Default" comment="" />
@@ -693,15 +743,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="798" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3281027" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25681493" sideWeight="0.6718973" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39942938" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.6005706" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25681493" sideWeight="0.6005706" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39942938" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952926" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -775,109 +825,87 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/controllers/api/v1/registrations_controller.rb</url>
-          <line>6</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/validators/email_validator.rb</url>
           <line>3</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb</url>
+          <line>36</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/models/activity_object.rb</url>
+          <line>11</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/models/user.rb</url>
           <line>27</line>
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/models/actor_observer.rb</url>
-          <line>3</line>
-          <option name="timeStamp" value="8" />
+          <url>file://$PROJECT_DIR$/app/controllers/api/v1/sessions_controller.rb</url>
+          <line>16</line>
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/models/inspector_observer.rb</url>
+          <url>file://$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb</url>
+          <line>29</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/models/activity_inspector_observer.rb</url>
           <line>4</line>
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/api/v1/comments_controller.rb</url>
+          <line>18</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$PROJECT_DIR$/app/controllers/api/v1/comments_controller.rb</url>
+          <line>19</line>
+          <option name="timeStamp" value="36" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="10" />
+      <option name="time" value="37" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_controller/metal/implicit_render.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="25" selection-start="261" selection-end="272" vertical-scroll-proportion="0.0">
+        <state line="4" column="0" selection-start="101" selection-end="101" vertical-scroll-proportion="0.15267175">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/profiles_controller.rb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p392/gems/activesupport-3.2.13/lib/active_support/callbacks.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="2" selection-start="568" selection-end="568" vertical-scroll-proportion="0.42857143">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/registrations_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="15" selection-start="15" selection-end="15" vertical-scroll-proportion="0.0">
+        <state line="415" column="0" selection-start="13686" selection-end="13686" vertical-scroll-proportion="0.33333334">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/like.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="1" column="66" selection-start="98" selection-end="98" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/user_observer.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="4" selection-start="75" selection-end="75" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/inspector_observer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="37" selection-start="190" selection-end="190" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/actor_observer.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="19" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/post.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="3" selection-start="36" selection-end="36" vertical-scroll-proportion="0.046153847">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="89" selection-start="1455" selection-end="1455" vertical-scroll-proportion="-4.9615383">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="19" selection-start="1157" selection-end="1157" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/activities_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -886,35 +914,77 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/actor.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
+        <state line="10" column="4" selection-start="262" selection-end="262" vertical-scroll-proportion="0.4054054">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/organization.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="23" selection-start="668" selection-end="668" vertical-scroll-proportion="0.6">
+        <state line="7" column="34" selection-start="156" selection-end="156" vertical-scroll-proportion="0.2837838">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/base_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="3" selection-start="123" selection-end="123" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p392/gems/activesupport-3.2.13/lib/active_support/hash_with_indifferent_access.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="0" selection-start="746" selection-end="746" vertical-scroll-proportion="1.2972972">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/profile.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="27" selection-start="124" selection-end="132" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/post.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="4" selection-start="1015" selection-end="1015" vertical-scroll-proportion="0.0">
+        <state line="4" column="20" selection-start="147" selection-end="147" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/activity.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="26" selection-start="108" selection-end="108" vertical-scroll-proportion="0.046153847">
+        <state line="10" column="27" selection-start="436" selection-end="444" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="38" selection-start="985" selection-end="1001" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p392/gems/actionpack-3.2.13/lib/action_controller/metal.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="143" column="0" selection-start="4448" selection-end="4448" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/comments_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="0" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/activity_inspector_observer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="0" selection-start="802" selection-end="802" vertical-scroll-proportion="0.43243244">
           <folding />
         </state>
       </provider>

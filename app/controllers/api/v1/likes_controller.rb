@@ -32,11 +32,12 @@ class Api::V1::LikesController < Api::V1::BaseController
             else
               Comment.find(params[:comment_id]).new(params[:like])
             end
+    @like.actor_id = current_actor.id
 
     if @like.save
-        respond_with @like, status: :created, location: @like
+        respond_with @like, status: :created, location: nil
     else
-        respond_with @like.errors, status: :unprocessable_entity
+        respond_with @like.errors, status: :unprocessable_entity, location: nil
     end
   end
 
@@ -50,9 +51,9 @@ class Api::V1::LikesController < Api::V1::BaseController
             end
 
     if @like.update_attributes(params[:like])
-        respond_with head :no_content
+        respond_with { head :no_content }
     else
-        respond_with @like.errors, status: :unprocessable_entity
+        respond_with { render json: @like.errors, status: :unprocessable_entity }
     end
   end
 
@@ -66,6 +67,24 @@ class Api::V1::LikesController < Api::V1::BaseController
             end
     @like.destroy
 
-    respond_with head :no_content
+    render { head :no_content, status: :no_content, location: nil }
+  end
+
+  protected
+
+  def like_activity
+    action = Action.find_or_create_by_name(:like)
+    activity_object = @like.activity_object.create
+    organization_id = current_actor.profile.organization_id
+
+    @activity = Activity.create(action_id: action.id, activity_object_id: activity_object.id, organization_id: organization_id)
+    @activity.action
+    @activity.actors << current_actor
+  end
+
+  def delete_like_activity
+    activity_object = @like.activity_object
+    @activity = Activity.find_by_activity_object_id(activity_object.id)
+    @activity.destroy
   end
 end

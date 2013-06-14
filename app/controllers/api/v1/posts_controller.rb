@@ -1,7 +1,5 @@
 class Api::V1::PostsController < Api::V1::BaseController
 
-  after_filter :audit
-
   # GET /api/v1/posts/1.json
   def show
     @post = Post.find(params[:id])
@@ -12,9 +10,10 @@ class Api::V1::PostsController < Api::V1::BaseController
   # POST /api/v1/posts.json
   def create
     @post = current_actor.posts.new(params[:post])
+    @post.actor_id = current_actor.id
 
     if @post.save
-      respond_with @post, status: :created, location: @post
+      respond_with @post, status: :created, location: nil
     else
       respond_with @post.errors, status: :unprocessable_entity
     end
@@ -38,7 +37,8 @@ class Api::V1::PostsController < Api::V1::BaseController
     @post = Post.find(params[:id])
     @post.destroy
 
-    respond_with head :no_content
+    #respond_with { head :no_content, location: nil }
+    render json: {success: true, message: "successfully destroyed post #{params[:id]}"}.to_json, status: :ok, location: nil
   end
 
   # GET /api/v1/posts/popular.json
@@ -56,9 +56,4 @@ class Api::V1::PostsController < Api::V1::BaseController
 
   end
 
-  protected
-
-  def post_activity
-    Activity.create
-  end
 end

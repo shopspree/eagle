@@ -17,11 +17,12 @@ class Api::V1::CommentsController < Api::V1::BaseController
   # POST /api/v1/posts/1/comments.json
   def create
     @comment = Post.find(params[:post_id]).comments.new(params[:comment])
+    @comment.actor_id = current_actor.id
 
     if @comment.save
-      respond_with @comment, status: :created, location: @comment
+      respond_with @comment, status: :created, location: nil
     else
-      respond_with @comment.errors, status: :unprocessable_entity
+      respond_with @comment.errors, status: :unprocessable_entity, location: nil
     end
   end
 
@@ -41,6 +42,6 @@ class Api::V1::CommentsController < Api::V1::BaseController
     @comment = Comment.find(params[:id])
     @comment.destroy
 
-    respond_with head :no_content 
+    render json: {success: true, message: "successfully destroyed comment #{params[:id]}"}.to_json, status: :no_content, location: nil
   end
 end

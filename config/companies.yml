@@ -3,6 +3,7 @@
 whitelist:
   - ebay.com
   - googlemail.com
+  - amdocs.com
 blacklist:
   - yahoo.com
   - google.com

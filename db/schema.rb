@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130611145015) do
+ActiveRecord::Schema.define(:version => 20130614133429) do
 
   create_table "actions", :force => true do |t|
     t.string   "name"
@@ -21,17 +21,10 @@ ActiveRecord::Schema.define(:version => 20130611145015) do
 
   create_table "activities", :force => true do |t|
     t.integer  "action_id"
-    t.integer  "activity_object_id"
     t.integer  "organization_id"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
-  end
-
-  create_table "activity_activity_objects", :force => true do |t|
-    t.integer  "activity_id"
-    t.integer  "activity_object_id"
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
+    t.string   "activity_object_id"
   end
 
   create_table "activity_actors", :force => true do |t|
@@ -50,8 +43,9 @@ ActiveRecord::Schema.define(:version => 20130611145015) do
 
   create_table "actors", :force => true do |t|
     t.integer  "user_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.integer  "organization_id"
   end
 
   create_table "address_types", :force => true do |t|
@@ -196,6 +190,7 @@ ActiveRecord::Schema.define(:version => 20130611145015) do
     t.integer  "organization_id"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
+    t.string   "email"
   end
 
   create_table "tags", :force => true do |t|

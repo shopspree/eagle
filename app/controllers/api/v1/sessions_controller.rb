@@ -4,8 +4,6 @@ class Api::V1::SessionsController < Devise::SessionsController
 
   before_filter :ensure_params_exist
 
-  after_filter :create_actor, only: [:create]
-
   def create
     build_resource
     @user = User.find_for_database_authentication(email: params[:user_login][:email])
@@ -17,6 +15,7 @@ class Api::V1::SessionsController < Devise::SessionsController
 
     if @user.valid_password?(params[:user_login][:password])
       sign_in(:user, @user)
+      @user.reset_authentication_token!
 
       render json: {success: true, auth_token: @user.authentication_token, email: @user.email}, status: :ok
     else
@@ -29,7 +28,7 @@ class Api::V1::SessionsController < Devise::SessionsController
     resource.authentication_token = nil
     resource.save
     sign_out(resource_name)
-    render json: {}.to_json, status: :ok
+    render json: {success: true, message: "sign out successfuly completed"}.to_json, status: :ok
   end
 
   protected
@@ -45,11 +44,6 @@ class Api::V1::SessionsController < Devise::SessionsController
 
   def verified_request?
     request.content_type == "application/json" || super
-  end
-
-  def create_actor
-    #user = User.find_all_by_email(params[:user_login][:email])
-    @user.actor.find_or_create_by_actor_id(user.id) if user
   end
 
 end

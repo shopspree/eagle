@@ -1,11 +1,20 @@
 class Organization < ActiveRecord::Base
-  has_many :profiles
+  has_many :actors
   has_many :groups
   has_many :activities
   has_many :hashtags
 
-  attr_accessible :name
+  attr_accessible :domain, :name
 
-  validates :name, presence: true
+  before_create :create_name
+
+  validates :domain, presence: true
+
+
+  protected
+
+  def create_name
+    name = domain unless name
+  end
 
 end

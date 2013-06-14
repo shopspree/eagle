@@ -1,9 +1,9 @@
 class Comment < ActiveRecord::Base
-  has_many :activity_objects, as: :timelineable
-  has_many :likes, as: :likeable
-  has_many :comments, as: :commentable
-  has_many :mentions, as: :mentionable
-  has_many :tags, as: :taggable
+  has_one :activity_object, as: :timelineable, dependent: :destroy
+  has_many :likes, as: :likeable, dependent: :destroy
+  has_many :comments, as: :commentable, dependent: :destroy
+  has_many :mentions, as: :mentionable, dependent: :destroy
+  has_many :tags, as: :taggable, dependent: :destroy
 
   belongs_to :actor
   belongs_to :commentable, polymorphic: true, counter_cache: true

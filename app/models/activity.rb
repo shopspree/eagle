@@ -1,15 +1,17 @@
 class Activity < ActiveRecord::Base
+
+  has_many :activity_actors
   has_many :actors, through: :activity_actors
-  has_one :activity_object, through: :activity_activity_objects
 
   belongs_to :action
-  belongs_to :activity_object
   belongs_to :organization
+  belongs_to :activity_object
 
   attr_accessible :action_id, :activity_object_id, :organization_id
 
   validates :organization_id, presence: true
+  validates :activity_object_id, presence: true
 
-  default_scope order: 'acivities.created_at DESC'
+  default_scope order: 'activities.created_at DESC'
 
 end

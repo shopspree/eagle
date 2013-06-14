@@ -1,17 +1,15 @@
 class Post < ActiveRecord::Base
 
-  has_many :medias
-  has_many :activity_objects, as: :timelineable
-  has_many :likes, as: :likeable
-  has_many :comments, as: :commentable
-  has_many :mentions, as: :mentionable
-  has_many :tags, as: :taggable
+  has_many :medias, dependent: :destroy
+  has_many :likes, as: :likeable, dependent: :destroy
+  has_many :comments, as: :commentable, dependent: :destroy
+  has_many :mentions, as: :mentionable, dependent: :destroy
+  has_many :tags, as: :taggable, dependent: :destroy
+  has_one :activity_object, as: :timelineable, dependent: :destroy
 
   belongs_to :actor
 
   attr_accessible :actor_id, :comments_count, :likes_count, :content
-
-  validates :actor_id, presence: true
 
   scope :popular, lambda { where("created_at > ?", 7.days.ago) }
 
