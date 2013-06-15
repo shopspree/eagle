@@ -1,6 +1,6 @@
 class Activity < ActiveRecord::Base
 
-  has_many :activity_actors
+  has_many :activity_actors,dependent: :destroy
   has_many :actors, through: :activity_actors
 
   belongs_to :action
