@@ -8,7 +8,8 @@ class Organization < ActiveRecord::Base
 
   before_create :create_name
 
-  validates :domain, presence: true
+  validates :domain, presence: true, uniqueness: true
+  validates :name, presence: true, uniqueness: true
 
 
   protected

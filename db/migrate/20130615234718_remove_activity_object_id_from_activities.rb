@@ -4,6 +4,6 @@ class RemoveActivityObjectIdFromActivities < ActiveRecord::Migration
   end
 
   def down
-    add_column :activities, :activity_object_id, :integer
+    add_column :activities, :activity_object_id, :intege
   end
 end

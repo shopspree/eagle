@@ -2,9 +2,9 @@ class Hashtag < ActiveRecord::Base
   has_many :tags
 
   belongs_to :actor
-  belongs_to :organization
+  belongs_to :context
 
-  attr_accessible :actor_id, :key, :organization_id, :tags_count, :value
+  attr_accessible :actor_id, :key, :context_id, :tags_count, :value
 
   validates :key, presence: true
 

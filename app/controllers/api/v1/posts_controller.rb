@@ -1,5 +1,7 @@
 class Api::V1::PostsController < Api::V1::BaseController
 
+  after_filter :post_audience, only: [:update, :create]
+
   # GET /api/v1/posts/1.json
   def show
     @post = Post.find(params[:id])
@@ -11,6 +13,7 @@ class Api::V1::PostsController < Api::V1::BaseController
   def create
     @post = current_actor.posts.new(params[:post])
     @post.actor_id = current_actor.id
+    @post.build_audience(params[:audience])
 
     if @post.save
       respond_with @post, status: :created, location: nil
@@ -54,6 +57,19 @@ class Api::V1::PostsController < Api::V1::BaseController
 
     responds_with @posts
 
+  end
+
+
+  protected
+
+  def post_actor
+
+  end
+
+  def post_audience
+    if params[:audience]
+      return
+    end
   end
 
 end

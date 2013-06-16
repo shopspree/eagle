@@ -5,7 +5,8 @@ class Post < ActiveRecord::Base
   has_many :comments, as: :commentable, dependent: :destroy
   has_many :mentions, as: :mentionable, dependent: :destroy
   has_many :tags, as: :taggable, dependent: :destroy
-  has_one :activity_object, as: :timelineable, dependent: :destroy
+  has_one :activity, as: :timelineable, dependent: :destroy
+  has_one :audience, as: :audienceable, dependent: :destroy
 
   belongs_to :actor
 

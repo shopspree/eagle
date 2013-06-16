@@ -69,22 +69,4 @@ class Api::V1::LikesController < Api::V1::BaseController
 
     render { head :no_content, status: :no_content, location: nil }
   end
-
-  protected
-
-  def like_activity
-    action = Action.find_or_create_by_name(:like)
-    activity_object = @like.activity_object.create
-    organization_id = current_actor.profile.organization_id
-
-    @activity = Activity.create(action_id: action.id, activity_object_id: activity_object.id, organization_id: organization_id)
-    @activity.action
-    @activity.actors << current_actor
-  end
-
-  def delete_like_activity
-    activity_object = @like.activity_object
-    @activity = Activity.find_by_activity_object_id(activity_object.id)
-    @activity.destroy
-  end
 end

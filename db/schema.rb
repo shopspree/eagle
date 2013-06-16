@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130614133429) do
+ActiveRecord::Schema.define(:version => 20130616152945) do
 
   create_table "actions", :force => true do |t|
     t.string   "name"
@@ -21,10 +21,11 @@ ActiveRecord::Schema.define(:version => 20130614133429) do
 
   create_table "activities", :force => true do |t|
     t.integer  "action_id"
-    t.integer  "organization_id"
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
-    t.string   "activity_object_id"
+    t.integer  "context_id"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+    t.integer  "timelineable_id"
+    t.string   "timelineable_type"
   end
 
   create_table "activity_actors", :force => true do |t|
@@ -34,18 +35,11 @@ ActiveRecord::Schema.define(:version => 20130614133429) do
     t.datetime "updated_at",  :null => false
   end
 
-  create_table "activity_objects", :force => true do |t|
-    t.integer  "timelineable_id"
-    t.string   "timelineable_type"
-    t.datetime "created_at",        :null => false
-    t.datetime "updated_at",        :null => false
-  end
-
   create_table "actors", :force => true do |t|
     t.integer  "user_id"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
-    t.integer  "organization_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "context_id"
   end
 
   create_table "address_types", :force => true do |t|
@@ -66,6 +60,14 @@ ActiveRecord::Schema.define(:version => 20130614133429) do
     t.datetime "updated_at",      :null => false
   end
 
+  create_table "audiences", :force => true do |t|
+    t.integer  "audienceable_id"
+    t.string   "audienceable_type"
+    t.datetime "created_at",        :null => false
+    t.datetime "updated_at",        :null => false
+    t.string   "type"
+  end
+
   create_table "comments", :force => true do |t|
     t.string   "content"
     t.integer  "actor_id"
@@ -75,6 +77,12 @@ ActiveRecord::Schema.define(:version => 20130614133429) do
     t.datetime "updated_at",                      :null => false
     t.integer  "comments_count",   :default => 0
     t.integer  "likes_count",      :default => 0
+  end
+
+  create_table "contexts", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "group_actors", :force => true do |t|
@@ -93,19 +101,19 @@ ActiveRecord::Schema.define(:version => 20130614133429) do
   create_table "groups", :force => true do |t|
     t.string   "name"
     t.integer  "group_type"
-    t.integer  "organization_id"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.integer  "context_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "hashtags", :force => true do |t|
     t.string   "key"
     t.string   "value"
     t.integer  "actor_id"
-    t.integer  "organization_id"
-    t.datetime "created_at",                     :null => false
-    t.datetime "updated_at",                     :null => false
-    t.integer  "tags_count",      :default => 0
+    t.integer  "context_id"
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
+    t.integer  "tags_count", :default => 0
   end
 
   create_table "likes", :force => true do |t|

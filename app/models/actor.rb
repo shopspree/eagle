@@ -9,11 +9,11 @@ class Actor < ActiveRecord::Base
   #has_many :groups, through: :group_actors
 
   belongs_to :user
-  belongs_to :organization
+  belongs_to :context
 
-  attr_accessible :user_id, :organization_id
+  attr_accessible :user_id, :context_id
 
   validates :user_id, presence: true
-  validates :organization_id, presence: true
+  validates :context_id, presence: true
 
 end

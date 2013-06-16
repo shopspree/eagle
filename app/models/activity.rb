@@ -2,16 +2,23 @@ class Activity < ActiveRecord::Base
 
   has_many :activity_actors,dependent: :destroy
   has_many :actors, through: :activity_actors
+  has_many :audiences
 
   belongs_to :action
-  belongs_to :organization
+  belongs_to :context
   belongs_to :activity_object
+  belongs_to :timelineable, polymorphic: true
 
-  attr_accessible :action_id, :activity_object_id, :organization_id
+  attr_accessible :action_id, :timelineable_id, :timelineable_type, :context_id
 
-  validates :organization_id, presence: true
-  validates :activity_object_id, presence: true
+  validates :context_id, presence: true
+  validates :timelineable_id, presence: true
+  validates :timelineable_type, presence: true
 
-  default_scope order: 'activities.created_at DESC'
+  DEFAULT_ORDER = 'activities.created_at DESC'
+
+  default_scope order: DEFAULT_ORDER
+
+  scope :timeline, lambda { |context_id| where(context_id: context_id).includes(:timelineable).order(DEFAULT_ORDER) }
 
 end
