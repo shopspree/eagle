@@ -6,7 +6,7 @@ class Organization < ActiveRecord::Base
 
   attr_accessible :domain, :name
 
-  before_create :create_name
+  before_create :default_values
 
   validates :domain, presence: true, uniqueness: true
   validates :name, presence: true, uniqueness: true
@@ -14,8 +14,8 @@ class Organization < ActiveRecord::Base
 
   protected
 
-  def create_name
-    name = domain unless name
+  def default_values
+    name ||= domain
   end
 
 end

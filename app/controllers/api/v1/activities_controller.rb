@@ -5,7 +5,7 @@ class Api::V1::ActivitiesController < Api::V1::BaseController
   # GET /api/v1/activities.json
   def index
     context_id = current_actor.context_id
-    @activities = Activity.timeline(context_id)
+    @activities = Activity.timeline(context_id).page(params[:activity][:page])
 
     respond_with @activities
   end

@@ -21,4 +21,17 @@ class Activity < ActiveRecord::Base
 
   scope :timeline, lambda { |context_id| where(context_id: context_id).includes(:timelineable).order(DEFAULT_ORDER) }
 
+
+  def post
+    Post.find(timelineable_id) if timelineable_id == 'Post'
+  end
+
+  def like
+    Like.find(timelineable_id) if timelineable_id == 'Like'
+  end
+
+  def comment
+    Comment.find(timelineable_id) if timelineable_id == 'Comment'
+  end
+
 end
