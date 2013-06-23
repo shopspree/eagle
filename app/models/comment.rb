@@ -14,13 +14,21 @@ class Comment < ActiveRecord::Base
   validates :actor_id, presence: true
   validates :content, length: { minimum: 1 }
 
-  def post
-    if commentable_type == 'Post'
-      Post.find(commentable_id)
-    else
-      comment = Comment.find(commentable_id)
-      comment.post
+
+  def post_context
+    case likeable_type
+      when 'Post'
+        self.post
+      when 'Comment'
+        comment = Comment.find(commentable_id)
+        comment.post_context
+      else
+        nil
     end
+  end
+
+  def post
+    Post.find(commentable_id) if commentable_type == 'Post'
   end
 
 end

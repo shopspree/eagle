@@ -45,14 +45,14 @@ class Ability
 
       # Comment
       can [:create, :read], Comment do |comment|
-        can_actor_read_post? actor, comment.post # can create comment on post they can read
+        can_actor_read_post? actor, comment.post_context # can create comment on post they can read
       end
       can :update,  Comment, actor_id: actor.id  # can update comment they own
       can :destroy, Comment, actor_id: actor.id  # can destroy comment they own
 
       # Like
       can :create,  Like do |like|
-        can_actor_read_post? actor, like.post # can create like on post they can read
+        can_actor_read_post? actor, like.post_context # can create like on post they can read
       end
       can :destroy, Like, actor_id: actor.id  # can destroy like they own
 
@@ -84,8 +84,8 @@ class Ability
         post.actor.context_id == actor.context_id
       when Audience::TYPES[:organization]
         post.actor == actor
-
-
+      else
+        false
     end
   end
 

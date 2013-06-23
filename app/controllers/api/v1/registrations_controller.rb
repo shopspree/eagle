@@ -4,14 +4,20 @@ class Api::V1::RegistrationsController < Devise::RegistrationsController
 
   # POST /api/v1/registrations.json
   def create
-    user = User.new(params[:user])
+    @user = User.new(params[:user])
 
-    if user.valid? && user.save
-      render json: {user: user.as_json, auth_token: user.authentication_token}, status: 201
+
+    if @user.valid? && @user.save
+      if @user.actor && @user.actor.profile
+        @user.actor.profile.update_attributes!(params[:profile]) if @user.actor.profile
+      end
+
+      render json: @user, only: [:email, :authentication_token], status: :created, location: nil
       return
+
     else
       warden.custom_failure!
-      render json: {errors: user.errors}, status: 422
+      render json: {errors: user.errors}, status: :unprocessable_entity
     end
   end
 

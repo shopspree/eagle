@@ -7,13 +7,20 @@ class Mention < ActiveRecord::Base
 
   attr_accessible :actor_id, :mentionable_id, :mentionable_type
 
-  def post(mention = self)
-    if mentionable_type == 'Post'
-      Post.find(mentionable_id)
-    else
-      mention = Mention.find(mentionable_id)
-      self.post(mention)
+  def post_context
+    case mentionable_type
+      when 'Post'
+        self.post
+      when 'Comment'
+        comment = Comment.find(mentionable_id)
+        comment.post_context
+      else
+        nil
     end
+  end
+
+  def post
+    Post.find(mentionable_id) if mentionable_type == 'Post'
   end
 
 end
