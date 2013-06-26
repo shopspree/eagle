@@ -3,13 +3,12 @@ class User < ActiveRecord::Base
   has_one :actor
 
   # Include default devise modules. Others available are:
-  # :lockable, :timeoutable and :omniauthable
+  # :lockable, :rememberable, :timeoutable and :omniauthable
   devise :database_authenticatable,
          :token_authenticatable,
          :confirmable,
          :registerable,
          :recoverable,
-         :rememberable,
          :trackable,
          :validatable
 

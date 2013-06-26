@@ -15,20 +15,16 @@ class Comment < ActiveRecord::Base
   validates :content, length: { minimum: 1 }
 
 
-  def post_context
-    case likeable_type
-      when 'Post'
-        self.post
-      when 'Comment'
-        comment = Comment.find(commentable_id)
-        comment.post_context
+  def post
+    case commentable
+      when Post
+        commentable
+      when Comment
+        comment = commentable
+        comment.post
       else
         nil
     end
-  end
-
-  def post
-    Post.find(commentable_id) if commentable_type == 'Post'
   end
 
 end

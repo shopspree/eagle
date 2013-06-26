@@ -11,20 +11,16 @@ class Like < ActiveRecord::Base
   validates :likeable_id, presence: true
   validates :likeable_type, presence: true
 
-  def post_context
-    case likeable_type
-      when 'Post'
-        self.post
-      when 'Comment'
-        comment = Comment.find(likeable_id)
-        comment.post_context
+  def post
+    case likeable
+      when Post
+        likeable
+      when Comment
+        comment = likeable
+        comment.post
       else
         nil
     end
-  end
-
-  def post
-    Post.find(likeable_id) if likeable_type == 'Post'
   end
 
 end

@@ -18,10 +18,10 @@ class NotificationInspectorObserver < ActiveRecord::Observer
   protected
 
   def like_notification(like)
-    if like.likeable_type == 'Post'
+    if like.likeable.is_a? Post
       post = like.post
       notify_post_actor like.activity, post
-    elsif like.likeable_type == 'Comment'
+    elsif like.likeable.is_a? Comment
       comment = like.comment
       notify_comment_actor like.activity, comment
     end
