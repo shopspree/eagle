@@ -23,4 +23,16 @@ class Profile < ActiveRecord::Base
     email.split("@").last if email
   end
 
+  def first_name
+    read_attribute(:first_name).try(:titleize)
+  end
+
+  def middle_name
+    read_attribute(:middle_name).try(:titleize)
+  end
+
+  def last_name
+    read_attribute(:last_name).try(:titleize)
+  end
+
 end

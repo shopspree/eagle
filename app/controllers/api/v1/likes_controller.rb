@@ -30,15 +30,11 @@ class Api::V1::LikesController < Api::V1::BaseController
     @like = if params[:post_id]
               Post.find(params[:post_id]).likes.new(params[:like])
             else
-              Comment.find(params[:comment_id]).new(params[:like])
+              Comment.find(params[:comment_id]).likes.new(params[:like])
             end
     @like.actor_id = current_actor.id
 
-    if @like.save
-        respond_with @like, status: :created, location: nil
-    else
-        respond_with @like.errors, status: :unprocessable_entity, location: nil
-    end
+    respond_with @like.errors, status: :unprocessable_entity, location: nil unless @like.save
   end
 
   # PUT /api/v1/posts/1/likes/1.json
