@@ -1,7 +1,7 @@
-class Api::V1::InappropriateReportsController < ApplicationController
+class Api::V1::InappropriateReportsController < Api::V1::BaseController
 
-  # POST /api/v1/posts/1/inappropriate_reports.json
-  # POST /api/v1/comment/1/inappropriate_reports.json
+  # POST /api/v1/posts/1/inappropriate.json
+  # POST /api/v1/comment/1/inappropriate.json
   def create
     @inappropriate_report = if params[:post_id]
                               Post.find(params[:post_id]).inappropriate_reports.new(params[:inappropriate_report])

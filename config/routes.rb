@@ -33,7 +33,7 @@ Eagle::Application.routes.draw do
         resources :mentions, only: [:index, :create, :destroy]
 
         # /posts/:post_id/inappropriate_reports
-        resources :inappropriate_reports, only: [:create]
+        resources :inappropriate, controller: :inappropriate_reports, only: [:create]
       end
 
       # /comments
@@ -42,8 +42,8 @@ Eagle::Application.routes.draw do
         # /comments/:comment_id/likes
         resources :likes, only: [:index, :create, :update, :destroy]
 
-        # /comments/:post_id/inappropriate_reports
-        resources :inappropriate_reports, only: [:create]
+        # /comments/:post_id/reports
+        resources :inappropriate, controller: :inappropriate_reports, only: [:create]
 
       end
 

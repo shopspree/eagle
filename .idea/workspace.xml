@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/api/v1/inappropriate_reports/_inappropriate_report.json.jbuilder" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/api/v1/inappropriate_reports/create.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130713082559_add_reports_count_to_post.rb" afterPath="$PROJECT_DIR$/db/migrate/20130713082559_add_reports_count_to_post.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/ability.rb" afterPath="$PROJECT_DIR$/app/models/ability.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/inappropriate_report.rb" afterPath="$PROJECT_DIR$/app/models/inappropriate_report.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/inappropriate_reports_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/inappropriate_reports_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
     </list>
     <ignored path="eagle.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,7 +32,7 @@
     <file path="/mention_actor.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370533463832" ignored="false" />
     <file path="/notification.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370533498006" ignored="false" />
     <file path="/posts_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373626282417" ignored="false" />
-    <file path="/routes.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373705147191" ignored="false" />
+    <file path="/routes.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373707463556" ignored="false" />
     <file path="/comments_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373616526396" ignored="false" />
     <file path="/likes_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373096391438" ignored="false" />
     <file path="/hashtags_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370861076265" ignored="false" />
@@ -168,16 +163,25 @@
       <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="19" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.0">
+            <state line="35" column="32" selection-start="992" selection-end="992" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="inappropriate_reports_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="inappropriate_reports_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/inappropriate_reports_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="25" selection-start="194" selection-end="215" vertical-scroll-proportion="0.0">
+            <state line="3" column="40" selection-start="157" selection-end="157" vertical-scroll-proportion="0.118421055">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mentions_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/mentions_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -201,19 +205,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_inappropriate_report.json.jbuilder" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/api/v1/inappropriate_reports/_inappropriate_report.json.jbuilder">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="likes_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="37" selection-start="769" selection-end="1007" vertical-scroll-proportion="0.0">
+            <state line="0" column="56" selection-start="31" selection-end="56" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -252,11 +247,11 @@
         <option value="$PROJECT_DIR$/db/migrate/20130713080751_add_reports_count_to_comment.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130713082559_add_reports_count_to_post.rb" />
         <option value="$PROJECT_DIR$/app/models/inappropriate_report.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/models/ability.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/api/v1/inappropriate_reports_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/api/v1/inappropriate_reports/create.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/views/api/v1/inappropriate_reports/_inappropriate_report.json.jbuilder" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/api/v1/inappropriate_reports_controller.rb" />
       </list>
     </option>
   </component>
@@ -364,24 +359,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eagle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eagle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="initializers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1116,13 +1093,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/db/migrate/20130610093254_fix_counter_cache_column_name.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20130610092026_add_comments_count_to_comment.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -1151,20 +1121,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="19" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="37" selection-start="769" selection-end="1007" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/post.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="33" selection-start="349" selection-end="370" vertical-scroll-proportion="0.0">
@@ -1186,27 +1142,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/inappropriate_report.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="3" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/inappropriate_reports_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="25" selection-start="194" selection-end="215" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/api/v1/inappropriate_reports/create.json.jbuilder">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="35" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/api/v1/likes/_like.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="42" vertical-scroll-proportion="0.0">
@@ -1221,9 +1156,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="56" selection-start="31" selection-end="56" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/mentions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="32" selection-start="992" selection-end="992" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/inappropriate_report.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="3" selection-start="214" selection-end="214" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/api/v1/inappropriate_reports/_inappropriate_report.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="26" selection-start="26" selection-end="26" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/api/v1/inappropriate_reports/create.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="35" selection-start="35" selection-end="35" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/inappropriate_reports_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="40" selection-start="157" selection-end="157" vertical-scroll-proportion="0.118421055">
           <folding />
         </state>
       </provider>
