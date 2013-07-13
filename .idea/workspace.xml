@@ -2,17 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/api/v1/activities/_activity.json.jbuilder" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/api/v1/likes/create.json.jbuilder" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/api/v1/comments/create.json.jbuilder" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/api/v1/posts/create.json.jbuilder" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/api/v1/comments/destroy.json.jbuilder" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/api/v1/likes/destroy.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/comments/_comment.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/comments/_comment.json.jbuilder" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/likes/_like.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/likes/_like.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/activities/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/activities/index.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/activities_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/activities_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/comment.rb" afterPath="$PROJECT_DIR$/app/models/comment.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/comments_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/comments_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/hashtag.rb" afterPath="$PROJECT_DIR$/app/models/hashtag.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/like.rb" afterPath="$PROJECT_DIR$/app/models/like.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/profile.rb" afterPath="$PROJECT_DIR$/app/models/profile.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/api/v1/likes_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/api/v1/likes_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/post.rb" afterPath="$PROJECT_DIR$/app/models/post.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="eagle.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370957868430" ignored="false" />
+    <file path="/Dummy.txt" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372756862776" ignored="false" />
     <file path="/organization.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371833560993" ignored="false" />
     <file path="/actor.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371303977702" ignored="false" />
     <file path="/profile.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372282493178" ignored="false" />
@@ -26,20 +37,20 @@
     <file path="/activity_object.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371216342960" ignored="false" />
     <file path="/activity_actor.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370532233344" ignored="false" />
     <file path="/action.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370535340086" ignored="false" />
-    <file path="/post.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372166203094" ignored="false" />
+    <file path="/post.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373703727303" ignored="false" />
     <file path="/media.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370532464361" ignored="false" />
     <file path="/media_type.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370532482724" ignored="false" />
-    <file path="/comment.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372188098422" ignored="false" />
-    <file path="/like.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372188170180" ignored="false" />
+    <file path="/comment.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373703638112" ignored="false" />
+    <file path="/like.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373058989791" ignored="false" />
     <file path="/object_hashtag.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370789912547" ignored="false" />
-    <file path="/hashtag.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371304078828" ignored="false" />
+    <file path="/hashtag.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373621513152" ignored="false" />
     <file path="/mention.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372188544665" ignored="false" />
     <file path="/mention_actor.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370533463832" ignored="false" />
     <file path="/notification.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370533498006" ignored="false" />
-    <file path="/posts_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371394312853" ignored="false" />
+    <file path="/posts_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373626282417" ignored="false" />
     <file path="/routes.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372198297064" ignored="false" />
-    <file path="/comments_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371225472011" ignored="false" />
-    <file path="/likes_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372323029015" ignored="false" />
+    <file path="/comments_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373616526396" ignored="false" />
+    <file path="/likes_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373096391438" ignored="false" />
     <file path="/hashtags_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370861076265" ignored="false" />
     <file path="/20130610090515_add_tags_count_to_hashtag.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370855387736" ignored="false" />
     <file path="/20130610091942_add_likes_count_to_post.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370856110289" ignored="false" />
@@ -49,8 +60,8 @@
     <file path="/Gemfile" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372163378171" ignored="false" />
     <file path="/development.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370861855826" ignored="false" />
     <file path="/production.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370861887571" ignored="false" />
-    <file path="/application.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371119323684" ignored="false" />
-    <file path="/activities_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372193980592" ignored="false" />
+    <file path="/application.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373549088860" ignored="false" />
+    <file path="/activities_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373060512562" ignored="false" />
     <file path="/mentions_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370875896614" ignored="false" />
     <file path="/base_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372195531597" ignored="false" />
     <file path="/tokens_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370880488977" ignored="false" />
@@ -101,12 +112,22 @@
     <file path="/20130616145955_create_audiences.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371401151057" ignored="false" />
     <file path="/notification_inspector_observer.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372161321931" ignored="false" />
     <file path="/index.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372249720387" ignored="false" />
-    <file path="/_post.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372250712421" ignored="false" />
+    <file path="/_post.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373062540169" ignored="false" />
     <file path="/_profile.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372278494274" ignored="false" />
-    <file path="/_comment.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372249760141" ignored="false" />
-    <file path="/_like.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372250680116" ignored="false" />
-    <file path="/create.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372495471380" ignored="false" />
+    <file path="/_comment.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373062913833" ignored="false" />
+    <file path="/_like.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372502747258" ignored="false" />
+    <file path="/create.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373626372413" ignored="false" />
     <file path="/_activity.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372435951536" ignored="false" />
+    <file path="/create.json.builder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372766869646" ignored="false" />
+    <file path="/likeable.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373049257115" ignored="false" />
+    <file path="/posts_helper.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373062586648" ignored="false" />
+    <file path="/comments_helper.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373062703683" ignored="false" />
+    <file path="/delete.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373554759907" ignored="false" />
+    <file path="/taggable_observer.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373617308877" ignored="false" />
+    <file path="/20130713080751_add_reports_count_to_comment.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373703672813" ignored="false" />
+    <file path="/20130713081036_create_inappropriate_reports.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373703091429" ignored="false" />
+    <file path="/inappropriate_report.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373703703382" ignored="false" />
+    <file path="/20130713082559_add_reports_count_to_post.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373704184348" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,55 +147,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.json.jbuilder" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/api/v1/activities/index.json.jbuilder">
+      <file leaf-file-name="20130713080751_add_reports_count_to_comment.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20130713080751_add_reports_count_to_comment.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="26" selection-start="40" selection-end="62" vertical-scroll-proportion="0.0">
+            <state line="10" column="32" selection-start="316" selection-end="316" vertical-scroll-proportion="0.37220845">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_activity.json.jbuilder" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/api/v1/activities/_activity.json.jbuilder">
+      <file leaf-file-name="20130713082559_add_reports_count_to_post.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20130713082559_add_reports_count_to_post.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="like.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/like.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_post.json.jbuilder" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="29" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="likes_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="40" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="create.json.jbuilder" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/api/v1/likes/create.json.jbuilder">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
+            <state line="6" column="77" selection-start="245" selection-end="266" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -183,34 +168,7 @@
       <file leaf-file-name="post.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/post.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="18" selection-start="45" selection-end="51" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="media.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/media.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_like.json.jbuilder" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/api/v1/likes/_like.json.jbuilder">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="2" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_comment.json.jbuilder" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/api/v1/comments/_comment.json.jbuilder">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="56" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
+            <state line="14" column="97" selection-start="648" selection-end="648" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -238,22 +196,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/activity.rb" />
-        <option value="$PROJECT_DIR$/config/initializers/devise.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/api/v1/activities_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/api/v1/base_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/api/v1/sessions_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/user.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/api/v1/comments/_comment.json.jbuilder" />
+        <option value="$PROJECT_DIR$/app/views/api/v1/likes/delete.json.jbuilder" />
+        <option value="$PROJECT_DIR$/app/models/hashtag_observer.rb" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/app/views/api/v1/comments/delete.json.jbuilder" />
         <option value="$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder" />
-        <option value="$PROJECT_DIR$/app/views/api/v1/profiles/_profile.json.jbuilder" />
-        <option value="$PROJECT_DIR$/app/models/profile.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/api/v1/activities/index.json.jbuilder" />
-        <option value="$PROJECT_DIR$/app/views/api/v1/activities/_activity.json.jbuilder" />
-        <option value="$PROJECT_DIR$/app/views/api/v1/likes/_like.json.jbuilder" />
-        <option value="$PROJECT_DIR$/app/views/api/v1/likes/create.json.jbuilder" />
+        <option value="$PROJECT_DIR$/app/controllers/api/v1/comments_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/taggable_observer.rb" />
+        <option value="$PROJECT_DIR$/app/models/hashtag.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/api/v1/posts/create.json.jbuilder" />
+        <option value="$PROJECT_DIR$/db/migrate/20130713081036_create_inappropriate_reports.rb" />
+        <option value="$PROJECT_DIR$/app/models/comment.rb" />
+        <option value="$PROJECT_DIR$/app/models/inappropriate_report.rb" />
+        <option value="$PROJECT_DIR$/app/models/post.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130713082559_add_reports_count_to_post.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20130713080751_add_reports_count_to_comment.rb" />
       </list>
     </option>
   </component>
@@ -267,7 +225,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="798" />
+    <option name="height" value="804" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -295,6 +253,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -346,6 +305,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -422,36 +413,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="v1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eagle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eagle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="v1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="profiles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -621,6 +582,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -654,21 +659,20 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="reference.settings.ide.settings.web.browsers" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../temp1" />
     <property name="FullScreen" value="false" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -949,16 +953,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="798" extended-state="6" />
+    <frame x="0" y="22" width="1440" height="804" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3281027" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32673267" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.6005706" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2840746" sideWeight="0.6005706" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39942938" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28837878" sideWeight="0.6096181" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3903819" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32952926" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1038,28 +1042,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb</url>
-          <line>39</line>
+          <line>35</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb</url>
-          <line>29</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb</url>
-          <line>65</line>
+          <line>61</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb</url>
-          <line>70</line>
+          <line>66</line>
           <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="ruby-line">
-          <url>file://$PROJECT_DIR$/app/models/activity_inspector_observer.rb</url>
-          <line>7</line>
-          <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="ruby-line">
           <url>file://$PROJECT_DIR$/app/controllers/api/v1/sessions_controller.rb</url>
@@ -1075,118 +1069,118 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="67" />
+      <option name="time" value="77" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/sessions_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="0" selection-start="1151" selection-end="1151" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-1.9.3-p392/gems/devise-2.2.4/lib/devise/models/trackable.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="0" selection-start="757" selection-end="757" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/activities_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="127" selection-end="127" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/api/v1/profiles/_profile.json.jbuilder">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="71" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/profile.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="26" selection-start="740" selection-end="740" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/comments_controller.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130606141048_create_comments.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/like.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130606140937_create_posts.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130610091942_add_likes_count_to_post.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="29" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0">
+        <state line="7" column="44" selection-start="112" selection-end="263" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/api/v1/comments/_comment.json.jbuilder">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130615134928_create_contexts.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="56" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130606141133_create_likes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="40" selection-start="1146" selection-end="1146" vertical-scroll-proportion="0.0">
+        <state line="3" column="25" selection-start="94" selection-end="113" vertical-scroll-proportion="0.12605043">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/inappropriate_report.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="32" selection-start="166" selection-end="166" vertical-scroll-proportion="0.21008404">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/tag.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="60" selection-start="135" selection-end="176" vertical-scroll-proportion="0.16806723">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="120" selection-start="640" selection-end="640" vertical-scroll-proportion="0.5462185">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130713081036_create_inappropriate_reports.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="25" selection-start="235" selection-end="235" vertical-scroll-proportion="0.23684211">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130616145955_create_audiences.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="36" selection-start="95" selection-end="192" vertical-scroll-proportion="0.078947365">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130610092038_add_likes_count_to_comment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130610093254_fix_counter_cache_column_name.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130610092026_add_comments_count_to_comment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/post.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="18" selection-start="45" selection-end="51" vertical-scroll-proportion="0.0">
+        <state line="14" column="97" selection-start="648" selection-end="648" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/media.rb">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130713082559_add_reports_count_to_post.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="6" column="77" selection-start="245" selection-end="266" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/api/v1/likes/_like.json.jbuilder">
+    <entry file="file://$PROJECT_DIR$/db/migrate/20130713080751_add_reports_count_to_comment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="2" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/api/v1/activities/_activity.json.jbuilder">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="104" selection-end="104" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/api/v1/activities/index.json.jbuilder">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="26" selection-start="40" selection-end="62" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/api/v1/likes/create.json.jbuilder">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="19" selection-start="19" selection-end="19" vertical-scroll-proportion="0.0">
+        <state line="10" column="32" selection-start="316" selection-end="316" vertical-scroll-proportion="0.37220845">
           <folding />
         </state>
       </provider>

@@ -15,11 +15,7 @@ class Api::V1::PostsController < Api::V1::BaseController
     @post.actor_id = current_actor.id
     @post.build_audience(params[:audience])
 
-    if @post.save
-      respond_with @post, status: :created, location: nil
-    else
-      respond_with @post.errors, status: :unprocessable_entity
-    end
+    respond_with @post.errors, status: :unprocessable_entity unless @post.save
 
   end
 

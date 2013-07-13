@@ -1,5 +1,7 @@
 json.(post, :id, :content, :created_at, :updated_at, :comments_count, :likes_count)
 
+json.liked_by_user liked_by_user? post, current_user
+
 json.medias post.medias do |media|
   json.url media.url_string
   json.type media.media_type.name

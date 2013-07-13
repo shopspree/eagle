@@ -11,6 +11,8 @@ class Like < ActiveRecord::Base
   validates :likeable_id, presence: true
   validates :likeable_type, presence: true
 
+  scope :user_likes, lambda { |actor_id| where(actor_id: actor_id).includes(:likeable) }
+
   def post
     case likeable
       when Post

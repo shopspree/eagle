@@ -61,6 +61,8 @@ class Api::V1::LikesController < Api::V1::BaseController
             else
               Comment.find(params[:comment_id]).likes.find(params[:id])
             end
+    @likeable = @like.likeable
+
     @like.destroy
 
     render { head :no_content, status: :no_content, location: nil }

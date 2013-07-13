@@ -6,7 +6,7 @@ class Hashtag < ActiveRecord::Base
 
   attr_accessible :actor_id, :key, :context_id, :tags_count, :value
 
-  validates :key, presence: true
+  validates :key, presence: true, uniqueness: true
 
   scope :popular, lambda { |limit| order(:tags_count).reverse_order.limit(limit) }
 
