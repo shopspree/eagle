@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130626202800) do
+ActiveRecord::Schema.define(:version => 20130713082559) do
 
   create_table "actions", :force => true do |t|
     t.string   "name"
@@ -77,6 +77,7 @@ ActiveRecord::Schema.define(:version => 20130626202800) do
     t.datetime "updated_at",                      :null => false
     t.integer  "comments_count",   :default => 0
     t.integer  "likes_count",      :default => 0
+    t.integer  "reports_count",    :default => 0
   end
 
   create_table "contexts", :force => true do |t|
@@ -114,6 +115,15 @@ ActiveRecord::Schema.define(:version => 20130626202800) do
     t.datetime "created_at",                :null => false
     t.datetime "updated_at",                :null => false
     t.integer  "tags_count", :default => 0
+  end
+
+  create_table "inappropriate_reports", :force => true do |t|
+    t.integer  "reportable_id"
+    t.string   "reportable_type"
+    t.string   "report_type"
+    t.integer  "actor_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   create_table "likes", :force => true do |t|
@@ -183,6 +193,7 @@ ActiveRecord::Schema.define(:version => 20130626202800) do
     t.datetime "updated_at",                    :null => false
     t.integer  "likes_count",    :default => 0
     t.integer  "comments_count", :default => 0
+    t.integer  "reports_count",  :default => 0
   end
 
   create_table "profiles", :force => true do |t|

@@ -48,7 +48,10 @@ class Ability
         can_actor_read_post? actor, comment.post # can create comment on post they can read
       end
       can :update,  Comment, actor_id: actor.id  # can update comment they own
-      can :destroy, Comment, actor_id: actor.id  # can destroy comment they own
+      #can :destroy, Comment, actor_id: actor.id  # can destroy comment they own
+      can :destroy, Comment do |comment|
+        comment.actor_id == actor.id || comment.post.actor_id == actor.id  # can destroy comment they own or for post they own
+      end
 
       # Like
       can :create,  Like do |like|
