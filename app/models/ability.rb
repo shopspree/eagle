@@ -59,6 +59,11 @@ class Ability
       end
       can :destroy, Like, actor_id: actor.id  # can destroy like they own
 
+      # Inappropriate
+      can :create,  InappropriateReport do |inappropriate_report|
+        can_actor_read_post? actor, inappropriate_report.post # can create inappropriate report on post they can read
+      end
+
       # Hashtag
       can :create,  Hashtag                               # can create hashtag
       can :read,    Hashtag, context_id: actor.context_id # can read any hashtag in the same context
@@ -74,6 +79,12 @@ class Ability
         profile.actor.context_id == actor.context_id  # can read profile of an actor in the same context
       end
       can :update,  Profile, actor_id: actor.id       # can update profile they own
+
+      # Category
+      can :read,    Category
+
+      # Subcategory
+      can [:create, :read], Subcategory
 
     end
   end

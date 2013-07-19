@@ -4,7 +4,7 @@ class AddReportsCountToPost < ActiveRecord::Migration
 
     Post.reset_column_information
     Post.all.each do |post|
-      Post.update_counters post.id, reports_count: post.inappropriate_reports.count
+      Post.update_counters post.id, reports_count: post.subcategories.count
     end
   end
 end

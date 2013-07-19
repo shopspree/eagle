@@ -56,6 +56,13 @@ Eagle::Application.routes.draw do
       # /activities
       resources :activities, only: [:index, :show]
 
+      # /categories/:id/subcategories
+      resources :categories, only: [:index]  do
+        resources :subcategories, only: [:index, :create]
+      end
+
+      # /subcategories
+      resources :subcategories, only: [:index]
     end
   end
 

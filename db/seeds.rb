@@ -8,3 +8,13 @@
 
 # AudienceType :
 # Public, Organization, Team, Only Me, Custom
+
+# Categories:
+# Project, Product, Offsite
+Category.create(name: 'Project')
+Category.create(name: 'Product')
+Category.create(name: 'Offsite')
+Category.create(name: 'Sales')
+Category.create(name: 'CEO Office')
+Category.create(name: 'Innovation')
+Category.create(name: 'Human Resources and Employee Leisure')

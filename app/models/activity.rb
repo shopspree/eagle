@@ -23,15 +23,15 @@ class Activity < ActiveRecord::Base
 
 
   def post
-    Post.find(timelineable_id) if timelineable_id == 'Post'
+    timelineable if timelineable.is_a? Post
   end
 
   def like
-    Like.find(timelineable_id) if timelineable_id == 'Like'
+    timelineable if timelineable.is_a? Like
   end
 
   def comment
-    Comment.find(timelineable_id) if timelineable_id == 'Comment'
+    timelineable if timelineable.is_a? Comment
   end
 
 end

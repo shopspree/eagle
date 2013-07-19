@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130713082559) do
+ActiveRecord::Schema.define(:version => 20130716070441) do
 
   create_table "actions", :force => true do |t|
     t.string   "name"
@@ -68,16 +68,22 @@ ActiveRecord::Schema.define(:version => 20130713082559) do
     t.string   "type"
   end
 
+  create_table "categories", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "comments", :force => true do |t|
     t.string   "content"
     t.integer  "actor_id"
     t.integer  "commentable_id"
     t.string   "commentable_type"
-    t.datetime "created_at",                      :null => false
-    t.datetime "updated_at",                      :null => false
-    t.integer  "comments_count",   :default => 0
-    t.integer  "likes_count",      :default => 0
-    t.integer  "reports_count",    :default => 0
+    t.datetime "created_at",                                 :null => false
+    t.datetime "updated_at",                                 :null => false
+    t.integer  "comments_count",              :default => 0
+    t.integer  "likes_count",                 :default => 0
+    t.integer  "inappropriate_reports_count", :default => 0
   end
 
   create_table "contexts", :force => true do |t|
@@ -186,14 +192,22 @@ ActiveRecord::Schema.define(:version => 20130713082559) do
     t.string   "domain"
   end
 
+  create_table "post_subcategories", :force => true do |t|
+    t.integer  "subcategory_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+    t.integer  "post_id"
+  end
+
   create_table "posts", :force => true do |t|
     t.string   "content"
     t.integer  "actor_id"
-    t.datetime "created_at",                    :null => false
-    t.datetime "updated_at",                    :null => false
-    t.integer  "likes_count",    :default => 0
-    t.integer  "comments_count", :default => 0
-    t.integer  "reports_count",  :default => 0
+    t.datetime "created_at",                                 :null => false
+    t.datetime "updated_at",                                 :null => false
+    t.integer  "likes_count",                 :default => 0
+    t.integer  "comments_count",              :default => 0
+    t.integer  "inappropriate_reports_count", :default => 0
+    t.integer  "subcategories_count"
   end
 
   create_table "profiles", :force => true do |t|
@@ -211,6 +225,16 @@ ActiveRecord::Schema.define(:version => 20130713082559) do
     t.datetime "updated_at",           :null => false
     t.string   "email"
     t.string   "thumbnail_url_string"
+  end
+
+  create_table "subcategories", :force => true do |t|
+    t.integer  "actor_id"
+    t.integer  "context_id"
+    t.string   "name"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+    t.integer  "category_id"
+    t.integer  "posts_count"
   end
 
   create_table "tags", :force => true do |t|
