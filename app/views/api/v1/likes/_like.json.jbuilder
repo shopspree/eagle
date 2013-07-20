@@ -1,17 +1,8 @@
-json.(like, :id, :created_at, :updated_at)
+json.like do |json|
+  json.(like, :id, :likeable_id, :likeable_type, :created_at, :updated_at)
 
-if like.likeable.is_a? Post
-  post = like.likeable
-  json.post do |json|
-    json.partial! post
-  end
-elsif like.likeable.is_a? Comment
-  comment = like.likeable
-  json.comment do |json|
-    json.partial! comment
+  json.user do |json|
+    json.partial! like.actor.profile
   end
 end
 
-json.user do |json|
-  json.partial! like.actor.profile
-end

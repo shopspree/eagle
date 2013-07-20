@@ -9,10 +9,9 @@ Eagle::Application.routes.draw do
     # /api/v1/*
     namespace :v1 do
 
-      # /users/:username/profiles
-      resources :users, only: []  do
-        resources :prfoiles, only: [:show, :update]
-      end
+      # /profiles/:email
+      get 'profiles/:email', to: 'profiles#show', constraints: { email: /.*?(?=\.json)/ }
+      put 'profiles/:email', to: 'profiles#update', constraints: { email: /.*?(?=\.json)/ }
 
       # /posts
       resources :posts, only: [:show, :create, :update, :destroy] do

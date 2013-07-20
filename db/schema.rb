@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130716070441) do
+ActiveRecord::Schema.define(:version => 20130720142609) do
 
   create_table "actions", :force => true do |t|
     t.string   "name"
@@ -97,6 +97,7 @@ ActiveRecord::Schema.define(:version => 20130716070441) do
     t.integer  "actor_id"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.string   "role"
   end
 
   create_table "group_types", :force => true do |t|
@@ -130,6 +131,15 @@ ActiveRecord::Schema.define(:version => 20130716070441) do
     t.integer  "actor_id"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
+  end
+
+  create_table "job_profiles", :force => true do |t|
+    t.string   "title"
+    t.integer  "actor_id"
+    t.integer  "organization_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.string   "email"
   end
 
   create_table "likes", :force => true do |t|
@@ -220,11 +230,11 @@ ActiveRecord::Schema.define(:version => 20130716070441) do
     t.string   "gender"
     t.integer  "address_id"
     t.integer  "actor_id"
-    t.integer  "organization_id"
-    t.datetime "created_at",           :null => false
-    t.datetime "updated_at",           :null => false
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
     t.string   "email"
-    t.string   "thumbnail_url_string"
+    t.string   "thumbnail_url"
+    t.string   "picture_url"
   end
 
   create_table "subcategories", :force => true do |t|

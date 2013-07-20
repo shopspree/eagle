@@ -3,6 +3,7 @@ class Organization < ActiveRecord::Base
   has_many :groups
   has_many :activities
   has_many :hashtags
+  has_many :job_profiles
 
   attr_accessible :domain, :name
 

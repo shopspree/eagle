@@ -3,8 +3,6 @@ class Api::V1::HashtagsController < Api::V1::BaseController
   # GET /api/v1/hashtags.json
   def index
     @hashtags = Hashtag.all
-
-    respond_with @hashtags
   end
 
   # GET /api/v1/hashtags/1.json
@@ -28,15 +26,11 @@ class Api::V1::HashtagsController < Api::V1::BaseController
   # GET /api/v1/hashtags/popular.json
   def popular
     @hashtags = Hashtag.popular(10)
-
-    respond_with @hashtags
   end
 
   # GET /api/v1/hashtags/suggest/ab.json
   def suggest
     @hashtags = Hashtag.suggest(params[:prefix])
-
-    respond_with @hashtags
   end
 end
 

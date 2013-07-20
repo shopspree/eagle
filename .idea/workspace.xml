@@ -2,33 +2,60 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20130713095225_rename_reports_count_column.rb" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/api/v1/categories/_category.json.jbuilder" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/api/v1/subcategories/_subcategory.json.jbuilder" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/api/v1/subcategories/create.json.jbuilder" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/api/v1/categories/index.json.jbuilder" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/api/v1/subcategories/index.json.jbuilder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20130713082559_add_reports_count_to_post.rb" afterPath="$PROJECT_DIR$/db/migrate/20130713082559_add_reports_count_to_post.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/api/v1/groups/_group.json.jbuilder" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/api/v1/hashtags/_hashtag.json.jbuilder" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/api/v1/job_profiles/_job_profile.json.jbuilder" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/api/v1/comments/index.json.jbuilder" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/api/v1/hashtags/index.json.jbuilder" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/api/v1/likes/index.json.jbuilder" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/api/v1/hashtags/popular.json.jbuilder" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/api/v1/activities/show.json.jbuilder" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/api/v1/profiles/show.json.jbuilder" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/api/v1/hashtags/suggest.json.jbuilder" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/api/v1/profiles/update.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/activities/_activity.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/activities/_activity.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/categories/_category.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/categories/_category.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/comments/_comment.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/comments/_comment.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/inappropriate_reports/_inappropriate_report.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/inappropriate_reports/_inappropriate_report.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/likes/_like.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/likes/_like.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/posts/_post.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/profiles/_profile.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/profiles/_profile.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/subcategories/_subcategory.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/subcategories/_subcategory.json.jbuilder" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/ability.rb" afterPath="$PROJECT_DIR$/app/models/ability.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/activity.rb" afterPath="$PROJECT_DIR$/app/models/activity.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/inappropriate_report.rb" afterPath="$PROJECT_DIR$/app/models/inappropriate_report.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/post.rb" afterPath="$PROJECT_DIR$/app/models/post.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/activities_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/activities_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/actor.rb" afterPath="$PROJECT_DIR$/app/models/actor.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/actor_observer.rb" afterPath="$PROJECT_DIR$/app/models/actor_observer.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/comments_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/comments_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/comments/create.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/comments/create.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/likes/create.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/likes/create.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/subcategories/create.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/subcategories/create.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/comments/destroy.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/comments/destroy.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/group.rb" afterPath="$PROJECT_DIR$/app/models/group.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/group_actor.rb" afterPath="$PROJECT_DIR$/app/models/group_actor.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/hashtags_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/hashtags_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/activities/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/activities/index.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/categories/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/categories/index.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/api/v1/subcategories/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/api/v1/subcategories/index.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/likes_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/organization.rb" afterPath="$PROJECT_DIR$/app/models/organization.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/profile.rb" afterPath="$PROJECT_DIR$/app/models/profile.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/profiles_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/profiles_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/api/v1/subcategories_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/api/v1/subcategories_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="eagle.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373875439841" ignored="false" />
-    <file path="/organization.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371833560993" ignored="false" />
-    <file path="/actor.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371303977702" ignored="false" />
-    <file path="/profile.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372282493178" ignored="false" />
+    <file path="/organization.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374309585069" ignored="false" />
+    <file path="/actor.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374330959842" ignored="false" />
+    <file path="/profile.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374329392722" ignored="false" />
     <file path="/address_type.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370531533717" ignored="false" />
     <file path="/address.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370531634029" ignored="false" />
-    <file path="/group.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371304125566" ignored="false" />
+    <file path="/group.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374309941142" ignored="false" />
     <file path="/group_type.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370535042172" ignored="false" />
-    <file path="/group_actor.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370531772841" ignored="false" />
+    <file path="/group_actor.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374310203093" ignored="false" />
     <file path="/activity.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373961108887" ignored="false" />
     <file path="/activity_activity_object.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371208421322" ignored="false" />
     <file path="/activity_object.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371216342960" ignored="false" />
@@ -45,9 +72,9 @@
     <file path="/mention_actor.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370533463832" ignored="false" />
     <file path="/notification.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370533498006" ignored="false" />
     <file path="/posts_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373905856006" ignored="false" />
-    <file path="/routes.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373984435098" ignored="false" />
-    <file path="/comments_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373616526396" ignored="false" />
-    <file path="/likes_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373096391438" ignored="false" />
+    <file path="/routes.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374319962149" ignored="false" />
+    <file path="/comments_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374344072927" ignored="false" />
+    <file path="/likes_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374342998333" ignored="false" />
     <file path="/hashtags_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370861076265" ignored="false" />
     <file path="/20130610090515_add_tags_count_to_hashtag.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370855387736" ignored="false" />
     <file path="/20130610091942_add_likes_count_to_post.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370856110289" ignored="false" />
@@ -58,7 +85,7 @@
     <file path="/development.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370861855826" ignored="false" />
     <file path="/production.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370861887571" ignored="false" />
     <file path="/application.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373549088860" ignored="false" />
-    <file path="/activities_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373060512562" ignored="false" />
+    <file path="/activities_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374343576399" ignored="false" />
     <file path="/mentions_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370875896614" ignored="false" />
     <file path="/base_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372195531597" ignored="false" />
     <file path="/tokens_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370880488977" ignored="false" />
@@ -79,15 +106,15 @@
     <file path="$PROJECT_DIR$/../temp1/app/models/user.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371025808540" ignored="false" />
     <file path="$PROJECT_DIR$/../temp1/app/controllers/tests_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1370980700816" ignored="false" />
     <file path="/sessions_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372197351225" ignored="false" />
-    <file path="/fragment.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372201891276" ignored="false" />
+    <file path="/fragment.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374321895172" ignored="false" />
     <file path="$PROJECT_DIR$/../temp1/app/controllers/registrations_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371034751269" ignored="false" />
     <file path="/companies.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371044116360" ignored="false" />
     <file path="/companies.yml" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371129307119" ignored="false" />
     <file path="/email_validator.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371047434924" ignored="false" />
     <file path="/temp.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371049558476" ignored="false" />
-    <file path="/profiles_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371108513421" ignored="false" />
+    <file path="/profiles_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374342087466" ignored="false" />
     <file path="/base_model.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371110883573" ignored="false" />
-    <file path="/actor_observer.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371849879053" ignored="false" />
+    <file path="/actor_observer.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374330983954" ignored="false" />
     <file path="/user_observer.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371849868914" ignored="false" />
     <file path="/verifier_observer.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371115495747" ignored="false" />
     <file path="/inspector_observer.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371119880568" ignored="false" />
@@ -97,7 +124,7 @@
     <file path="/activity_inspector_observer.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371396686656" ignored="false" />
     <file path="/20130615133220_rename_organization.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371303637507" ignored="false" />
     <file path="/audience.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371397153749" ignored="false" />
-    <file path="/ability.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373977087437" ignored="false" />
+    <file path="/ability.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374356048883" ignored="false" />
     <file path="/20130615155328_change_activities.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371339665071" ignored="false" />
     <file path="/20130615234445_remove_activity_object_id_from_activities.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371339917113" ignored="false" />
     <file path="/20130616141838_drop_audience_table.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371392334996" ignored="false" />
@@ -108,13 +135,13 @@
     <file path="/20130616152945_add_type_to_audience.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371396850466" ignored="false" />
     <file path="/20130616145955_create_audiences.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1371401151057" ignored="false" />
     <file path="/notification_inspector_observer.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372161321931" ignored="false" />
-    <file path="/index.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373963059064" ignored="false" />
-    <file path="/_post.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373062540169" ignored="false" />
-    <file path="/_profile.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372278494274" ignored="false" />
-    <file path="/_comment.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373062913833" ignored="false" />
-    <file path="/_like.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372502747258" ignored="false" />
-    <file path="/create.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373706838830" ignored="false" />
-    <file path="/_activity.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372435951536" ignored="false" />
+    <file path="/index.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374354419945" ignored="false" />
+    <file path="/_post.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374342674411" ignored="false" />
+    <file path="/_profile.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374341753534" ignored="false" />
+    <file path="/_comment.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374342542005" ignored="false" />
+    <file path="/_like.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374342487486" ignored="false" />
+    <file path="/create.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374347565426" ignored="false" />
+    <file path="/_activity.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374343474928" ignored="false" />
     <file path="/create.json.builder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1372766869646" ignored="false" />
     <file path="/likeable.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373049257115" ignored="false" />
     <file path="/posts_helper.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373062586648" ignored="false" />
@@ -126,22 +153,34 @@
     <file path="/inappropriate_report.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373705056605" ignored="false" />
     <file path="/20130713082559_add_reports_count_to_post.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373956170544" ignored="false" />
     <file path="/inappropriate_reports_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373706606172" ignored="false" />
-    <file path="/_inappropriate_report.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373707018849" ignored="false" />
+    <file path="/_inappropriate_report.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374347614614" ignored="false" />
     <file path="/20130713095225_rename_reports_count_column.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373709271755" ignored="false" />
     <file path="/20130716062641_add_subcategories_count_to_post.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373956253595" ignored="false" />
     <file path="/post_subcategory.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373988200225" ignored="false" />
     <file path="/subcategory.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373988257042" ignored="false" />
     <file path="/category.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373988337597" ignored="false" />
-    <file path="/20130716062354_create_subcategories.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373957266299" ignored="false" />
+    <file path="/20130716062354_create_subcategories.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374309307924" ignored="false" />
     <file path="/20130716064828_add_posts_count_to_subcategory.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373957322304" ignored="false" />
     <file path="/20130716065508_add_post_id_to_post_subcategory.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373957728553" ignored="false" />
     <file path="/20130716062436_create_post_subcategories.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373957737993" ignored="false" />
     <file path="/20130716070429_add_posts_count_to_subcategory.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373958419926" ignored="false" />
     <file path="/categories_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373969119949" ignored="false" />
-    <file path="/_category.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373962961017" ignored="false" />
+    <file path="/_category.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374344167118" ignored="false" />
     <file path="/_subcategories.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373967007440" ignored="false" />
     <file path="/subcategories.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373963092871" ignored="false" />
-    <file path="/subcategories_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1373993142107" ignored="false" />
+    <file path="/subcategories_controller.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374347434949" ignored="false" />
+    <file path="/20130720083220_remove_organization_id_from_profile.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374309193610" ignored="false" />
+    <file path="/20130716071825_create_categories.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374309327386" ignored="false" />
+    <file path="/job_profile.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374309758769" ignored="false" />
+    <file path="/20130720085112_remove_group_id_from_job_profile.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374310313415" ignored="false" />
+    <file path="/_job_profile.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374341860924" ignored="false" />
+    <file path="/show.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374341777832" ignored="false" />
+    <file path="/20130720130256_rename_thumbnail_url_string_to_picture_thumbnail_url_in_profile.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374325408590" ignored="false" />
+    <file path="/20130720142609_rename_picture_thumbnail_url_to_thumnail_url.rb" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374330416246" ignored="false" />
+    <file path="/_group.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374341809857" ignored="false" />
+    <file path="/destroy.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374355348308" ignored="false" />
+    <file path="/_subcategory.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374344201167" ignored="false" />
+    <file path="/_hashtag.json.jbuilder" changelist="3eb61dc7-8070-42c2-b73b-7be9a03d1cf5" time="1374351783886" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -161,55 +200,28 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <file leaf-file-name="hashtags_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/hashtags_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="45" selection-start="1895" selection-end="1895" vertical-scroll-proportion="0.0">
+            <state line="32" column="48" selection-start="721" selection-end="721" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/post.rb">
+      <file leaf-file-name="index.json.jbuilder" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/api/v1/subcategories/index.json.jbuilder">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="20" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
+            <state line="5" column="2" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="subcategory.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/subcategory.rb">
+      <file leaf-file-name="index.json.jbuilder" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/api/v1/activities/index.json.jbuilder">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="2" selection-start="42" selection-end="112" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="category.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/category.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="46" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mention.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/mention.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="14" selection-start="143" selection-end="173" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="comment.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="4" column="9" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -218,14 +230,23 @@
       <file leaf-file-name="ability.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="86" column="39" selection-start="3346" selection-end="3346" vertical-scroll-proportion="0.0">
+            <state line="56" column="27" selection-start="2146" selection-end="2146" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="subcategories_helper.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/helpers/api/v1/subcategories_helper.rb">
+      <file leaf-file-name="_like.json.jbuilder" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/api/v1/likes/_like.json.jbuilder">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="49" selection-start="69" selection-end="69" vertical-scroll-proportion="0.04">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_activity.json.jbuilder" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/api/v1/activities/_activity.json.jbuilder">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -233,10 +254,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="subcategories_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/subcategories_controller.rb">
+      <file leaf-file-name="index.json.jbuilder" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/api/v1/comments/index.json.jbuilder">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="168" selection-start="376" selection-end="376" vertical-scroll-proportion="0.24861878">
+            <state line="2" column="13" selection-start="26" selection-end="34" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.json.jbuilder" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/api/v1/likes/index.json.jbuilder">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="0" selection-start="110" selection-end="110" vertical-scroll-proportion="-4.0384617">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="like.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/like.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="57" selection-start="207" selection-end="235" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="destroy.json.jbuilder" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/api/v1/comments/destroy.json.jbuilder">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="5" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -264,22 +312,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/seeds.rb" />
-        <option value="$PROJECT_DIR$/app/models/activity.rb" />
-        <option value="$PROJECT_DIR$/app/views/api/v1/categories/_category.json.jbuilder" />
-        <option value="$PROJECT_DIR$/app/views/api/v1/categories/index.json.jbuilder" />
-        <option value="$PROJECT_DIR$/app/views/api/v1/categories/create.json.jbuilder" />
-        <option value="$PROJECT_DIR$/app/views/api/v1/categories/_subcategories.json.jbuilder" />
-        <option value="$PROJECT_DIR$/app/views/api/v1/categories/_subcategory.json.jbuilder" />
-        <option value="$PROJECT_DIR$/app/views/api/v1/categories/subcategories.json.jbuilder" />
-        <option value="$PROJECT_DIR$/app/controllers/api/v1/categories_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/ability.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/models/subcategory.rb" />
-        <option value="$PROJECT_DIR$/app/models/category.rb" />
-        <option value="$PROJECT_DIR$/app/models/post.rb" />
-        <option value="$PROJECT_DIR$/app/models/post_subcategory.rb" />
         <option value="$PROJECT_DIR$/app/controllers/api/v1/subcategories_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/api/v1/subcategories/create.json.jbuilder" />
+        <option value="$PROJECT_DIR$/app/views/api/v1/inappropriate_reports/_inappropriate_report.json.jbuilder" />
+        <option value="$PROJECT_DIR$/app/controllers/api/v1/comments_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/api/v1/comments/create.json.jbuilder" />
+        <option value="$PROJECT_DIR$/app/views/api/v1/comments/index.json.jbuilder" />
+        <option value="$PROJECT_DIR$/app/views/api/v1/categories/index.json.jbuilder" />
+        <option value="$PROJECT_DIR$/app/controllers/api/v1/hashtags_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/api/v1/hashtags/index.json.jbuilder" />
+        <option value="$PROJECT_DIR$/app/views/api/v1/hashtags/_hashtag.json.jbuilder" />
+        <option value="$PROJECT_DIR$/app/views/api/v1/subcategories/index.json.jbuilder" />
+        <option value="$PROJECT_DIR$/app/views/api/v1/activities/index.json.jbuilder" />
+        <option value="$PROJECT_DIR$/app/views/api/v1/likes/index.json.jbuilder" />
+        <option value="$PROJECT_DIR$/app/views/api/v1/comments/destroy.json.jbuilder" />
+        <option value="$PROJECT_DIR$/app/models/ability.rb" />
+        <option value="$PROJECT_DIR$/app/views/api/v1/likes/_like.json.jbuilder" />
       </list>
     </option>
   </component>
@@ -433,6 +481,126 @@
               <option name="myItemId" value="v1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="subcategories" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="likes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hashtags" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="comments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -478,6 +646,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="v1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="activities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eagle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -493,72 +691,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eagle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eagle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eagle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eagle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eagle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eagle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="api" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="v1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -647,7 +779,11 @@
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/api/v1/hashtags" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/api/v1/job_profiles" />
       <recent name="$PROJECT_DIR$/app/views/api/v1/subcategories" />
       <recent name="$PROJECT_DIR$/app/controllers/api/v1" />
       <recent name="$PROJECT_DIR$/app/controllers" />
@@ -927,14 +1063,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="792" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32424676" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.6005706" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2969871" sideWeight="0.6111908" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2969871" sideWeight="0.6111908" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38880917" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -1032,118 +1168,118 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="77" />
+      <option name="time" value="82" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/helpers/api/v1/categories_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/hashtag.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="71" selection-start="144" selection-end="163" vertical-scroll-proportion="0.22613065">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/api/v1/hashtags/_hashtag.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="47" selection-start="70" selection-end="70" vertical-scroll-proportion="0.03768844">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/api/v1/hashtags/suggest.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/mentions_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/api/v1/hashtags/popular.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/profiles_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/api/v1/hashtags/index.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="25" selection-start="86" selection-end="86" vertical-scroll-proportion="0.07537688">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/hashtags_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="48" selection-start="721" selection-end="721" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/api/v1/subcategories/create.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/activities_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/api/v1/subcategories/index.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="2" selection-start="145" selection-end="145" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/api/v1/activities/index.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="9" selection-start="102" selection-end="102" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/api/v1/activities/_activity.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/categories_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/api/v1/likes/index.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="47" selection-start="47" selection-end="47" vertical-scroll-proportion="0.0">
+        <state line="7" column="0" selection-start="110" selection-end="110" vertical-scroll-proportion="-4.0384617">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/posts_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/api/v1/comments/destroy.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="33" selection-start="33" selection-end="42" vertical-scroll-proportion="0.0">
+        <state line="5" column="5" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/api/v1/comments/index.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="13" selection-start="26" selection-end="34" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/ability.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="86" column="39" selection-start="3346" selection-end="3346" vertical-scroll-proportion="0.0">
+        <state line="56" column="27" selection-start="2146" selection-end="2146" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/api/v1/subcategories_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/like.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="7" column="57" selection-start="207" selection-end="235" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/api/v1/likes/_like.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="45" selection-start="1895" selection-end="1895" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/mention.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="14" selection-start="143" selection-end="173" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/subcategory.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="2" selection-start="42" selection-end="112" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/category.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="46" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/post_subcategory.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="25" selection-start="88" selection-end="88" vertical-scroll-proportion="0.12">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/post.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="20" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/api/v1/subcategories_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="168" selection-start="376" selection-end="376" vertical-scroll-proportion="0.24861878">
+        <state line="1" column="49" selection-start="69" selection-end="69" vertical-scroll-proportion="0.04">
           <folding />
         </state>
       </provider>

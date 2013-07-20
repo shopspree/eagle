@@ -1,12 +1,9 @@
-json.(comment, :id, :content, :likes_count, :commentable_id, :commentable_type, :created_at, :updated_at)
+json.comment do |json|
+  json.(comment, :id, :content, :likes_count, :commentable_id, :commentable_type, :created_at, :updated_at)
+  json.liked_by_user liked_by_user? comment, current_user
 
-json.liked_by_user liked_by_user? comment, current_user
-
-post = comment.post
-json.post do |json|
-  json.partial! post
+  json.user do |json|
+    json.partial! comment.actor.profile
+  end
 end
 
-json.user do |json|
-  json.partial! comment.actor.profile
-end

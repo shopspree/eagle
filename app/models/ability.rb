@@ -44,7 +44,7 @@ class Ability
       end
 
       # Comment
-      can [:create, :read], Comment do |comment|
+      can [:index, :create, :read], Comment do |comment|
         can_actor_read_post? actor, comment.post # can create comment on post they can read
       end
       can :update,  Comment, actor_id: actor.id  # can update comment they own
@@ -54,7 +54,7 @@ class Ability
       end
 
       # Like
-      can :create,  Like do |like|
+      can [:index, :create],  Like do |like|
         can_actor_read_post? actor, like.post # can create like on post they can read
       end
       can :destroy, Like, actor_id: actor.id  # can destroy like they own

@@ -1,32 +1,45 @@
 class Api::V1::ProfilesController < Api::V1::BaseController
 
-  # GET /api/v1/users/john.doe@email.com/profiles.json
+  # GET /api/v1/profiles/john.doe@email.com.json
   def show
-    @profile = profile_by_username(params[:username])
+    user = user_by_email(params[:email])
 
-    respond_with { render json: @profile }
+    if user
+      @profile = user.actor.profile
+      @job_profile = user.actor.job_profile
+      @groups = user.actor.groups
+    end
+
   end
 
-  # PUT /api/v1/users/john.doe@email.com/profiles.json
+  # PUT /api/v1/profiles/john.doe@email.com.json
   def update
-    @profile = profile_by_username(params[:username])
+    user = user_by_email(params[:email])
 
-    if @profile.update_attributes(params[:profile])
-      respond_with { head :no_content }
+    user.actor.profile.assign_attributes(params[:profile])
+
+    user.actor.job_profile.assign_attributes(params[:job_profile])
+
+    group = Group.find_or_create_by_name(params[:group][:name])
+    if user.actor.groups.empty?
+      user.actor.groups << group
     else
-      respond_with { render json: @profile.errors, status: :unprocessable_entity }
+      user.actor.groups
+      user.actor.groups << group
     end
+
+
+    render json: user.errors, status: :unprocessable_entity unless user.save
+
   end
 
   protected
 
-  def profile_by_username(username)
-    user = if current_user && current_user.email  == usernmane
+  def user_by_email(email)
+    user = if current_user && current_user.email  == email
              current_user
            else
-             User.find_by_email(username)
+             User.find_by_email(email)
            end
-
-    @profile = user.actor.profile if user
   end
 end

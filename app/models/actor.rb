@@ -5,8 +5,10 @@ class Actor < ActiveRecord::Base
   has_many :notifications
   has_many :activity_actors
   has_many :activities, through: :activity_actors
+  has_many :groups, through: :group_actors
+  has_many :group_actors
+  has_one :job_profile
   has_one :profile
-  #has_many :groups, through: :group_actors
 
   belongs_to :user
   belongs_to :context

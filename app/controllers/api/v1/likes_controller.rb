@@ -3,35 +3,36 @@ class Api::V1::LikesController < Api::V1::BaseController
   # GET /api/v1/posts/1/likes.json
   # GET /api/v1/comments/1/likes.json
   def index
-    @likes = if params[:post_id]
-               Post.find(params[:post_id]).likes.all
+    @likeable = if params[:post_id]
+               Post.find(params[:post_id])
              else
-               Comment.find(params[:comment_id]).likes.all
+               Comment.find(params[:comment_id])
              end
 
-    respond_with @likes
+    @likes = @likeable.likes.all
   end
 
   # GET /api/v1/posts/1/likes/1.json
   # GET /api/v1/comments/1/likes/1.json
   def show
-    @like = if params[:post_id]
-              Post.find(params[:post_id]).likes.find(params[:id])
+    @likeable = if params[:post_id]
+              Post.find(params[:post_id])
             else
-              Comment.find(params[:comment_id]).likes.find(params[:id])
+              Comment.find(params[:comment_id])
             end
 
-    respond_with @like
+    @likeable.likes.find(params[:id])
   end
 
   # POST /api/v1/posts/1/likes.json
   # POST /api/v1/comments/1/likes.json
   def create
-    @like = if params[:post_id]
-              Post.find(params[:post_id]).likes.new(params[:like])
+    @likeable = if params[:post_id]
+              Post.find(params[:post_id])
             else
-              Comment.find(params[:comment_id]).likes.new(params[:like])
+              Comment.find(params[:comment_id])
             end
+    @like = @likeable.likes.new(params[:like])
     @like.actor_id = current_actor.id
 
     respond_with @like.errors, status: :unprocessable_entity, location: nil unless @like.save
@@ -56,14 +57,14 @@ class Api::V1::LikesController < Api::V1::BaseController
   # DELETE /api/v1/posts/1/likes/1.json
   # DELETE /api/v1/comments/1/likes/1.json
   def destroy
-    @like = if params[:post_id]
+    like = if params[:post_id]
               Post.find(params[:post_id]).likes.find(params[:id])
             else
               Comment.find(params[:comment_id]).likes.find(params[:id])
             end
-    @likeable = @like.likeable
+    @likeable = like.likeable
 
-    @like.destroy
+    like.destroy
 
     render { head :no_content, status: :no_content, location: nil }
   end

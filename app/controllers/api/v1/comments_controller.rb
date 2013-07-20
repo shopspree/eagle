@@ -2,9 +2,8 @@ class Api::V1::CommentsController < Api::V1::BaseController
 
   # GET /api/v1/posts/1/comments.json
   def index
-    @comments = Post.find(params[:post_id]).comments.all
-
-    respond_with @comments   
+    @post = Post.find(params[:post_id])
+    @comments = @post.comments.all
   end
 
   # GET /api/v1/posts/1/comments/1.json
@@ -16,7 +15,8 @@ class Api::V1::CommentsController < Api::V1::BaseController
 
   # POST /api/v1/posts/1/comments.json
   def create
-    @comment = Post.find(params[:post_id]).comments.new(params[:comment])
+    @post = Post.find(params[:post_id])
+    @comment = @post.comments.new(params[:comment])
     @comment.actor_id = current_actor.id
 
     respond_with @comment.errors, status: :unprocessable_entity, location: nil unless @comment.save
@@ -36,22 +36,13 @@ class Api::V1::CommentsController < Api::V1::BaseController
   # DELETE /api/v1/posts/1/comments/1.json
   # DELETE /api/v1/comments/1/comments/1.json
   def destroy
-    @comment = if params[:post_id]
-                 Post.find(params[:post_id]).comments.find(params[:id])
-               else
-                 Comment.find(params[:comment_id]).comments.find(params[:id])
-               end
-    @comment.destroy
-
-    @commentable = if @comment.commentable.is_a? Post
-                     Post.find(@comment.commentable.id)
+    @commentable = if params[:post_id]
+                     Post.find(params[:post_id])
                    else
-                     Comment.find(@comment.commentable.id)
+                     Comment.find(params[:comment_id])
                    end
 
-    x = 3
-
-
-
+    @comment = @commentable.comments.find(params[:id])
+    @comment.destroy
   end
 end
