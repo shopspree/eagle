@@ -16,17 +16,20 @@ class Api::V1::ProfilesController < Api::V1::BaseController
   def update
     user = user_by_email(params[:email])
 
-    user.actor.profile.assign_attributes(params[:profile])
+    user.actor.profile.update_attributes(params[:profile])
 
-    user.actor.job_profile.assign_attributes(params[:job_profile])
+    user.actor.job_profile.update_attributes(params[:job_profile])
 
-    group = Group.find_or_create_by_name(params[:group][:name])
-    if user.actor.groups.empty?
-      user.actor.groups << group
-    else
-      user.actor.groups
-      user.actor.groups << group
+    unless params[:group][:name].nil?
+      group = Group.find_or_create_by_name_and_context_id(params[:group][:name], user.actor.context_id)
+      if user.actor.groups.empty?
+        user.actor.groups << group
+      else
+        user.actor.groups
+        user.actor.groups << group
+      end
     end
+
 
 
     render json: user.errors, status: :unprocessable_entity unless user.save

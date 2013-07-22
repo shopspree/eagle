@@ -3,9 +3,10 @@ class JobProfile < ActiveRecord::Base
   belongs_to :actor
   belongs_to :organization
 
-  attr_accessible :actor_id, :organization_id, :title, :email
+  attr_accessible :actor_id, :title, :email
+  attr_readonly :organization_id
 
-  before_validation :default_values
+  before_create :default_values
 
   validates :actor_id, presence: true
   validates :organization_id, presence: true
