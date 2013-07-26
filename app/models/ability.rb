@@ -48,7 +48,6 @@ class Ability
         can_actor_read_post? actor, comment.post # can create comment on post they can read
       end
       can :update,  Comment, actor_id: actor.id  # can update comment they own
-      #can :destroy, Comment, actor_id: actor.id  # can destroy comment they own
       can :destroy, Comment do |comment|
         comment.actor_id == actor.id || comment.post.actor_id == actor.id  # can destroy comment they own or for post they own
       end
@@ -78,13 +77,19 @@ class Ability
       can :read,    Profile do |profile|
         profile.actor.context_id == actor.context_id  # can read profile of an actor in the same context
       end
-      can :update,  Profile, actor_id: actor.id       # can update profile they own
+      can :update,  Profile, actor_id: actor.id       # can update self profile
 
       # Category
       can :read,    Category
 
       # Subcategory
       can [:create, :read], Subcategory
+
+      # Notification
+      can [:read, :acknowledge],  Notification, actor_id: actor.id # can read self profile notification
+
+      # User
+      can [:update_password], User
 
     end
   end

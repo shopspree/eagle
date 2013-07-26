@@ -6,6 +6,7 @@ class Comment < ActiveRecord::Base
   has_many :tags, as: :taggable, dependent: :destroy
   has_many :hashtags, through: :tags
   has_many :inappropriate_reports, as: :reportable, dependent: :destroy
+  has_many :notifications, as: :notificationable, dependent: :destroy
   has_one :activity, as: :timelineable, dependent: :destroy
 
   belongs_to :actor

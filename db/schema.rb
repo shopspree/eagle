@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130720142609) do
+ActiveRecord::Schema.define(:version => 20130723200926) do
 
   create_table "actions", :force => true do |t|
     t.string   "name"
@@ -37,9 +37,10 @@ ActiveRecord::Schema.define(:version => 20130720142609) do
 
   create_table "actors", :force => true do |t|
     t.integer  "user_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",          :null => false
+    t.datetime "updated_at",          :null => false
     t.integer  "context_id"
+    t.integer  "notifications_count"
   end
 
   create_table "address_types", :force => true do |t|
@@ -182,9 +183,10 @@ ActiveRecord::Schema.define(:version => 20130720142609) do
   create_table "notifications", :force => true do |t|
     t.boolean  "is_read"
     t.integer  "actor_id"
-    t.integer  "activity_id"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
+    t.integer  "notificationable_id"
+    t.string   "notificationable_type"
   end
 
   create_table "object_hashtags", :force => true do |t|

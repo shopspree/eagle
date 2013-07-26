@@ -4,7 +4,7 @@ class AddPostsCountToSubcategory < ActiveRecord::Migration
 
     Subcategory.reset_column_information
     Subcategory.all.each do |subcategory|
-      Subcategory.update_counters subcategory.id, posts_count: subcategory.post.count
+      Subcategory.update_counters subcategory.id, posts_count: subcategory.posts.count
     end
   end
 end

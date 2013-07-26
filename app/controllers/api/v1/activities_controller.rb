@@ -8,12 +8,6 @@ class Api::V1::ActivitiesController < Api::V1::BaseController
     page = params[:activity] ? params[:activity][:page] : 1
     @activities = Activity.timeline(context_id).page(page)
 
-    #user_likes = Like.user_likes current_actor
-    #@liked_objects = Hash.new
-    #user_likes.each do |like|
-    #  @liked_objects[like.likeable] = true
-    #end
-
   end
 
 

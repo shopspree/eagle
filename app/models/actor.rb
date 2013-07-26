@@ -13,7 +13,7 @@ class Actor < ActiveRecord::Base
   belongs_to :user
   belongs_to :context
 
-  attr_accessible :user_id, :context_id
+  attr_accessible :user_id, :context_id, :notifications_count
 
   validates :user_id, presence: true
   validates :context_id, presence: true

@@ -30,9 +30,19 @@ class Api::V1::ProfilesController < Api::V1::BaseController
       end
     end
 
-
-
     render json: user.errors, status: :unprocessable_entity unless user.save
+
+  end
+
+  # GET /api/v1/profiles.json
+  def search
+    user = user_by_email(params[:email])
+
+    if user
+      @profile = user.actor.profile
+      @job_profile = user.actor.job_profile
+      @groups = user.actor.groups
+    end
 
   end
 

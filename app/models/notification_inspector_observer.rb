@@ -3,11 +3,10 @@ class NotificationInspectorObserver < ActiveRecord::Observer
   observe :comment, :like
 
   def after_create(object)
-    object_sym = object.class.name.to_sym
-    case object_sym
-      when :like
+    case object
+      when Like
         like_notification object
-      when :comment
+      when Comment
         comment_notification object
       else
         nil
@@ -20,30 +19,37 @@ class NotificationInspectorObserver < ActiveRecord::Observer
   def like_notification(like)
     if like.likeable.is_a? Post
       post = like.post
-      notify_post_actor like.activity, post
+      notify_post_actor(post) unless post.actor == like.actor
     elsif like.likeable.is_a? Comment
       comment = like.comment
-      notify_comment_actor like.activity, comment
+      notify_comment_actor(comment) unless comment.actor == like.actor
     end
   end
 
   def comment_notification(comment)
     post = comment.post
-    notify_post_actor comment.activity, post
+    unless comment.actor == post.actor
+      notify_post_actor post, actor
 
-    post.comments.each do |post_comment|
-      notify_comment_actor comment.activity, post_comment
+      comment_actors = Array.new
+      post.comments.each do |post_comment|
+        unless comment_actors.include? post_comment.actor
+          comment_actors << post_comment.actor
+          notify_comment_actor post_comment
+        end
+      end
     end
+
   end
 
-  def notify_post_actor(post, activity)
+  def notify_post_actor(post)
     actor = post.actor
-    actor.notifications.create(activity_id: activity.id)
+    post.notifications.create(actor_id: actor.id)
   end
 
-  def notify_comment_actor(comment, activity)
+  def notify_comment_actor(comment)
     actor = comment.actor
-    actor.notifications.create(activity_id: activity.id)
+    comment.notifications.create(actor_id: actor.id)
   end
 
 end

@@ -9,6 +9,7 @@ class Post < ActiveRecord::Base
   has_many :inappropriate_reports, as: :reportable, dependent: :destroy
   has_many :post_subcategories, dependent: :destroy
   has_many :subcategories, through: :post_subcategories
+  has_many :notifications, as: :notificationable, dependent: :destroy
   has_one :activity, as: :timelineable, dependent: :destroy
   has_one :audience, as: :audienceable, dependent: :destroy
 

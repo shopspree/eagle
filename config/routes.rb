@@ -3,6 +3,8 @@ Eagle::Application.routes.draw do
   # devise
   devise_for :users, controllers: { sessions: "api/v1/sessions", registrations: "api/v1/registrations" }
 
+  put 'users/update_password', to: 'api/v1/users#update_password'
+
   # /api/*
   namespace :api do
 
@@ -62,6 +64,10 @@ Eagle::Application.routes.draw do
 
       # /subcategories
       resources :subcategories, only: [:index]
+
+      # /notifications/:email
+      get 'notifications/:email', to: 'notifications#index', constraints: { email: /.*?(?=\.json)/ }
+      put 'notifications/:email', to: 'notifications#acknowledge', constraints: { email: /.*?(?=\.json)/ }
     end
   end
 
