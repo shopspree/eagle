@@ -8,9 +8,9 @@ class TaggableObserver < ActiveRecord::Observer
       # get hashtag from taggable object
       hashtag_keys = Array.new
       if object.is_a? Post
-        hashtag_keys = object.content.scan regex
+        hashtag_keys = object.content.scan regex  if object.content
       elsif object.is_a? Comment
-        hashtag_keys = object.content.scan regex
+        hashtag_keys = object.content.scan regex  if object.content
       end
 
       hashtag_keys.each do |key|

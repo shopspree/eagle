@@ -78,6 +78,7 @@ class Ability
         profile.actor.context_id == actor.context_id  # can read profile of an actor in the same context
       end
       can :update,  Profile, actor_id: actor.id       # can update self profile
+      can :search,  Profile # can search for profiles
 
       # Category
       can :read,    Category

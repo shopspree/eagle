@@ -11,15 +11,22 @@ Eagle::Application.routes.draw do
     # /api/v1/*
     namespace :v1 do
 
-      # /profiles/:email
-      get 'profiles/:email', to: 'profiles#show', constraints: { email: /.*?(?=\.json)/ }
-      put 'profiles/:email', to: 'profiles#update', constraints: { email: /.*?(?=\.json)/ }
+      # /profiles
+      # /profiles/email/:email
+      get 'profiles/email/:email', to: 'profiles#show', constraints: { email: /.*?(?=\.json)/ }
+      put 'profiles/email/:email', to: 'profiles#update', constraints: { email: /.*?(?=\.json)/ }
+
+      # /profiles/search/:keyword.json
+      get 'profiles/search/:keyword', to: 'profiles#search'
 
       # /posts
       resources :posts, only: [:show, :create, :update, :destroy] do
 
         # /posts/popular
         get 'popular', on: :collection
+
+        # /post/:post_id/activities
+        resources :activities, only: [:index]
 
         # /posts/posts_by_user_id/1
         #get 'posts_by_user_id/:id', on: :collection

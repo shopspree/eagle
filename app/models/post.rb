@@ -17,9 +17,8 @@ class Post < ActiveRecord::Base
 
   attr_accessible :actor_id, :comments_count, :likes_count, :content, :inappropriate_reports_count, :post_subcategories_count
 
-  scope :popular, lambda { where("created_at > ?", 7.days.ago) }
+  scope :popular, lambda { where("created_at > ?", 60.days.ago) }
 
-  #scope :posts_by_user_id, lambda { |id| where(actor_id: id) }
 
   def is_liked_by?(actor)
     likes.each do |like|

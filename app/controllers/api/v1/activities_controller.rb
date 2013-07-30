@@ -3,10 +3,15 @@ class Api::V1::ActivitiesController < Api::V1::BaseController
   respond_to :json
 
   # GET /api/v1/activities.json
+  # GET /api/v1/post/:post_id/activities.json
   def index
-    context_id = current_actor.context_id
-    page = params[:activity] ? params[:activity][:page] : 1
-    @activities = Activity.timeline(context_id).page(page)
+    @activities =  if params[:post_id]
+                     [Post.find(params[:post_id]).activity]
+                   else
+                     context_id = current_actor.context_id
+                     page = params[:activity] ? params[:activity][:page] : 1
+                     Activity.timeline(context_id).page(page)
+                   end
 
   end
 

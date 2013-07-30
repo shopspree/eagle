@@ -43,8 +43,6 @@ class Api::V1::PostsController < Api::V1::BaseController
   # GET /api/v1/posts/popular.json
   def popular
     @posts = Post.popular
-
-    respond_with @posts
   end
 
   # GET /api/v1/posts/posts_by_user_id/:user_id.json
