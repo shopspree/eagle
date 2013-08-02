@@ -1,6 +1,6 @@
 class JobProfile < ActiveRecord::Base
 
-  belongs_to :actor
+  belongs_to :person
   belongs_to :organization
 
   attr_accessible :actor_id, :title, :email

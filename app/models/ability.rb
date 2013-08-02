@@ -34,6 +34,9 @@ class Ability
 
       # Activity
       can :read, Activity, context_id: actor.context_id # can read any activity in the same context
+      #can :read, Activity do |activity|
+        #user.actor.person.follows.include? activity.timeline.actor.person # the user follows the activity owner
+      #end
 
       # Post
       can :create,  Post                      # can create post the actor owns

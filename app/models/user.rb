@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
 
-  has_one :actor
+  has_one :person
 
   # Include default devise modules. Others available are:
   # :lockable, :rememberable, :timeoutable and :omniauthable
@@ -24,10 +24,15 @@ class User < ActiveRecord::Base
   protected
 
   def email_validations
-    domain = email.split("@").last
+    domain_name = email.split("@").last
+    domain = Domain.find_by_name(domain)
 
-    errors.add :email, "#{domain} is blacklisted" if Companies["blacklist"].include? domain
-    errors.add :email, "#{domain} is not whitelisted" unless Companies["whitelist"].include? domain
+    unless domain
+      errors.add :email, "#{domain} is not found"
+    else
+      errors.add :email, "#{domain} is blacklisted" if domain.blacklist?
+    end
+
   end
 
 end

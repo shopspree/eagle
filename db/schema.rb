@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130727065355) do
+ActiveRecord::Schema.define(:version => 20130731144213) do
 
   create_table "actions", :force => true do |t|
     t.string   "name"
@@ -61,12 +61,20 @@ ActiveRecord::Schema.define(:version => 20130727065355) do
     t.datetime "updated_at",      :null => false
   end
 
+  create_table "associations", :force => true do |t|
+    t.integer  "group_id"
+    t.integer  "person_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
   create_table "audiences", :force => true do |t|
     t.integer  "audienceable_id"
     t.string   "audienceable_type"
     t.datetime "created_at",        :null => false
     t.datetime "updated_at",        :null => false
     t.string   "type"
+    t.integer  "activity_id"
   end
 
   create_table "categories", :force => true do |t|
@@ -91,6 +99,32 @@ ActiveRecord::Schema.define(:version => 20130727065355) do
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "domains", :force => true do |t|
+    t.string   "name"
+    t.boolean  "blacklist"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.integer  "organization_id"
+  end
+
+  create_table "followers", :force => true do |t|
+    t.integer  "followable_id"
+    t.string   "followable_type"
+    t.boolean  "approved"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+    t.integer  "person_id"
+  end
+
+  create_table "follows", :force => true do |t|
+    t.integer  "actor_id"
+    t.integer  "followable_id"
+    t.string   "followable_type"
+    t.boolean  "approved"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
   create_table "group_actors", :force => true do |t|
@@ -201,7 +235,13 @@ ActiveRecord::Schema.define(:version => 20130727065355) do
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-    t.string   "domain"
+  end
+
+  create_table "people", :force => true do |t|
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "actor_id"
+    t.integer  "context_id"
   end
 
   create_table "post_subcategories", :force => true do |t|

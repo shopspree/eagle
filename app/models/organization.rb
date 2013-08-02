@@ -1,22 +1,11 @@
 class Organization < ActiveRecord::Base
-  has_many :actors
+  has_many :people
   has_many :groups
-  has_many :activities
-  has_many :hashtags
   has_many :job_profiles
+  has_many :domains, dependent: :destroy
 
-  attr_accessible :domain, :name
+  attr_accessible :name
 
-  before_create :default_values
-
-  validates :domain, presence: true, uniqueness: true
   validates :name, presence: true, uniqueness: true
-
-
-  protected
-
-  def default_values
-    name ||= domain
-  end
 
 end

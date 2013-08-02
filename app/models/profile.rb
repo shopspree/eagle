@@ -1,5 +1,5 @@
 class Profile < ActiveRecord::Base
-  belongs_to :actor
+  belongs_to :person
   belongs_to :address
 
   attr_accessible :actor_id, :address_id, :birthday, :first_name, :gender, :last_name, :middle_name, :name_prefix, :name_suffix, :email, :picture_url, :thumbnail_url, :full_name

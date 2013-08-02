@@ -1,12 +1,19 @@
 class UserObserver < ActiveRecord::Observer
 
   def before_create(user)
+    # find ro create the user's organization
     organization = Organization.find_or_create_by_domain(domain user.email)
     if organization
-      context = Context.find_or_create_by_name(organization.name)
-      user.create_actor(context_id: context.id)
-    end
+      # get context for the user
+      context = if Settings['context.global']
+                  Context.find_or_create_by_name(organization.name)
+                else
+                  Context.find_by_name(Settings['context.global.name'])
+                end
 
+      # create the user with the proper context
+      user.create_person(context_id: context.id)
+    end
   end
 
 
@@ -15,6 +22,5 @@ class UserObserver < ActiveRecord::Observer
   def domain(email)
     email.split("@").last if email
   end
-
 
 end
